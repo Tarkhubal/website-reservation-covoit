@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Résultats de recherche de trajets en covoiturage AMD">
+    <title>Résultats de recherche - AMD Éco-Mobilité</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/amd-logo.svg" alt="AMD Logo">
+                <span class="logo-text">Éco-Mobilité</span>
+            </a>
+            <div class="header-actions">
+                <a href="connexion.html" class="btn btn-secondary">Connexion</a>
+                <a href="inscription.html" class="btn btn-primary">Inscription</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="covoiturage.html" class="active">Covoiturage</a>
+                    <div class="dropdown-content">
+                        <a href="rechercher-trajet.html">Rechercher un trajet</a>
+                        <a href="proposer-trajet.html">Proposer un trajet</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="location.html">Location</a>
+                    <div class="dropdown-content">
+                        <a href="location-velo.html">Vélos</a>
+                        <a href="location-trottinette.html">Trottinettes</a>
+                        <a href="location-voiture.html">Voitures électriques</a>
+                    </div>
+                </li>
+                <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="flex flex-between flex-wrap gap-2 mb-3" style="align-items: center;">
+                <div>
+                    <h1>Résultats de recherche</h1>
+                                <p class="text-gray mt-1">Paris → Paris 75001 (AMD) · 20 décembre 2024 · 5 trajets trouvés</p>
+                </div>
+                <a href="rechercher-trajet.html" class="btn btn-secondary">Modifier la recherche</a>
+            </div>
+
+            <div class="alert alert-info mb-3">
+                <span class="alert-icon">💡</span>
+                <span>Conseil : Réservez à l'avance pour garantir votre place. Les trajets les plus demandés se remplissent vite !</span>
+            </div>
+
+            <div class="search-results-container">
+                <div class="results-list">
+                <a href="detail-trajet.html" class="card trip-card">
+                    <div class="driver-info">
+                        <div class="driver-avatar">JD</div>
+                        <div>
+                            <strong>Jean Dupont</strong>
+                            <p class="text-gray" style="font-size: 0.85rem;">⭐ 4.8 · 45 trajets</p>
+                        </div>
+                    </div>
+                    <div class="trip-info">
+                        <div class="trip-route">
+                            <span>Paris 15e</span>
+                            <span class="arrow">→</span>
+                               <span>Paris 75001 (AMD)</span>
+                        </div>
+                        <div class="trip-details">
+                            <span>📅 20/12 à 8h30</span>
+                            <span>👥 3 places</span>
+                            <span>🚗 Tesla Model 3</span>
+                            <span>⚡ Électrique</span>
+                        </div>
+                    </div>
+                    <div style="text-align: right;">
+                        <div class="trip-price">Gratuit</div>
+                        <span class="badge badge-success mt-1">Vérifié</span>
+                    </div>
+                </a>
+
+                <a href="detail-trajet.html" class="card trip-card">
+                    <div class="driver-info">
+                        <div class="driver-avatar" style="background: var(--amd-blue);">ML</div>
+                        <div>
+                            <strong>Marie Lefèvre</strong>
+                            <p class="text-gray" style="font-size: 0.85rem;">⭐ 4.9 · 78 trajets</p>
+                        </div>
+                    </div>
+                    <div class="trip-info">
+                        <div class="trip-route">
+                            <span>Paris 14e</span>
+                            <span class="arrow">→</span>
+                               <span>Paris 75001 (AMD)</span>
+                        </div>
+                        <div class="trip-details">
+                            <span>📅 20/12 à 7h45</span>
+                            <span>👥 2 places</span>
+                            <span>🚗 Renault Zoé</span>
+                            <span>⚡ Électrique</span>
+                        </div>
+                    </div>
+                    <div style="text-align: right;">
+                        <div class="trip-price">5 pts</div>
+                        <span class="badge badge-success mt-1">Régulier</span>
+                    </div>
+                </a>
+
+                <a href="detail-trajet.html" class="card trip-card">
+                    <div class="driver-info">
+                        <div class="driver-avatar" style="background: var(--amd-green);">AS</div>
+                        <div>
+                            <strong>Antoine Simon</strong>
+                            <p class="text-gray" style="font-size: 0.85rem;">⭐ 4.7 · 32 trajets</p>
+                        </div>
+                    </div>
+                    <div class="trip-info">
+                        <div class="trip-route">
+                            <span>Paris 13e</span>
+                            <span class="arrow">→</span>
+                               <span>Paris 75001 (AMD)</span>
+                        </div>
+                        <div class="trip-details">
+                            <span>📅 20/12 à 8h00</span>
+                            <span>👥 4 places</span>
+                            <span>🚗 Peugeot e-208</span>
+                            <span>⚡ Électrique</span>
+                        </div>
+                    </div>
+                    <div style="text-align: right;">
+                        <div class="trip-price">Gratuit</div>
+                        <span class="badge badge-info mt-1">Nouveau</span>
+                    </div>
+                </a>
+
+                <a href="detail-trajet.html" class="card trip-card">
+                    <div class="driver-info">
+                        <div class="driver-avatar" style="background: #9b59b6;">CB</div>
+                        <div>
+                            <strong>Claire Bernard</strong>
+                            <p class="text-gray" style="font-size: 0.85rem;">⭐ 5.0 · 120 trajets</p>
+                        </div>
+                    </div>
+                    <div class="trip-info">
+                        <div class="trip-route">
+                            <span>Paris 5e</span>
+                            <span class="arrow">→</span>
+                               <span>Paris 75001 (AMD)</span>
+                        </div>
+                        <div class="trip-details">
+                            <span>📅 20/12 à 9h00</span>
+                            <span>👥 1 place</span>
+                            <span>🚗 VW ID.3</span>
+                            <span>⚡ Électrique</span>
+                        </div>
+                    </div>
+                    <div style="text-align: right;">
+                        <div class="trip-price">3 pts</div>
+                        <span class="badge badge-primary mt-1">Top conducteur</span>
+                    </div>
+                </a>
+
+                <a href="detail-trajet.html" class="card trip-card">
+                    <div class="driver-info">
+                        <div class="driver-avatar" style="background: #e67e22;">PM</div>
+                        <div>
+                            <strong>Pierre Martin</strong>
+                            <p class="text-gray" style="font-size: 0.85rem;">⭐ 4.6 · 18 trajets</p>
+                        </div>
+                    </div>
+                    <div class="trip-info">
+                        <div class="trip-route">
+                            <span>Paris 12e</span>
+                            <span class="arrow">→</span>
+                               <span>Paris 75001 (AMD)</span>
+                        </div>
+                        <div class="trip-details">
+                            <span>📅 20/12 à 8h15</span>
+                            <span>👥 3 places</span>
+                            <span>🚗 Tesla Model Y</span>
+                            <span>⚡ Électrique</span>
+                        </div>
+                    </div>
+                    <div style="text-align: right;">
+                        <div class="trip-price">Gratuit</div>
+                        <span class="badge badge-success mt-1">Vérifié</span>
+                    </div>
+                </a>
+                </div>
+
+                <div class="map-container">
+                    <div class="map-header">
+                        <h3>📍 Visualisation du trajet</h3>
+                        <p>Paris → Paris 75001 (AMD)</p>
+                    </div>
+                    
+                    <div class="map-view">
+                        <div class="map-grid"></div>
+                        <div class="map-route main"></div>
+                        <div class="map-marker start"></div>
+                        <div class="map-marker end"></div>
+                        <div class="map-label start-label">Départ : Paris</div>
+                        <div class="map-label end-label">Arrivée : AMD</div>
+                    </div>
+                    
+                    <div class="map-stats">
+                        <div class="map-stat-item">
+                            <strong>~30 min</strong>
+                            <span>Durée moyenne</span>
+                        </div>
+                        <div class="map-stat-item">
+                            <strong>5</strong>
+                            <span>Trajets trouvés</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2025 AMD Éco-Mobilité - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

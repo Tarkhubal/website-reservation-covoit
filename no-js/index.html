@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AMD Éco-Mobilité - Plateforme de covoiturage et location de véhicules propres pour les collaborateurs AMD">
+    <meta name="author" content="AMD">
+    <title>AMD Éco-Mobilité - Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="index.html" class="logo">
+                <img src="assets/img/amd-logo.svg" alt="AMD Logo">
+                <span class="logo-text">Éco-Mobilité</span>
+            </a>
+            <div class="header-actions">
+                <a href="pages/connexion.html" class="btn btn-secondary">Connexion</a>
+                <a href="pages/inscription.html" class="btn btn-primary">Inscription</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="pages/covoiturage.html">Covoiturage</a>
+                    <div class="dropdown-content">
+                        <a href="pages/rechercher-trajet.html">Rechercher un trajet</a>
+                        <a href="pages/proposer-trajet.html">Proposer un trajet</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="pages/location.html">Location</a>
+                    <div class="dropdown-content">
+                        <a href="pages/location-velo.html">Vélos</a>
+                        <a href="pages/location-trottinette.html">Trottinettes</a>
+                        <a href="pages/location-voiture.html">Voitures électriques</a>
+                    </div>
+                </li>
+                <li><a href="pages/comment-ca-marche.html">Comment ça marche</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Ensemble, réduisons notre empreinte carbone</h1>
+                <p>Rejoignez la communauté AMD Éco-Mobilité et participez activement à la transition écologique de notre entreprise. Covoiturage, vélos, trottinettes et voitures électriques à votre disposition.</p>
+                <div class="hero-buttons">
+                    <a href="pages/rechercher-trajet.html" class="btn btn-primary">🔍 Rechercher un trajet</a>
+                    <a href="pages/proposer-trajet.html" class="btn btn-secondary">🚗 Proposer un trajet</a>
+                    <a href="pages/location.html" class="btn btn-secondary">🚲 Louer un véhicule</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">2 450</span>
+                    <span class="stat-label">Collaborateurs inscrits</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15 800</span>
+                    <span class="stat-label">Trajets partagés</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">42 T</span>
+                    <span class="stat-label">CO₂ économisés</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="search-box">
+            <form action="pages/resultats-recherche.html" method="get" class="search-form">
+                <div class="form-group">
+                    <label for="depart">Départ</label>
+                    <input type="text" id="depart" name="depart" class="form-control" placeholder="Ville ou adresse de départ" required>
+                </div>
+                <div class="form-group">
+                    <label for="arrivee">Arrivée</label>
+                    <input type="text" id="arrivee" name="arrivee" class="form-control" placeholder="Ville ou adresse d'arrivée" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="passagers">Passagers</label>
+                    <select id="passagers" name="passagers" class="form-control">
+                        <option value="1">1 passager</option>
+                        <option value="2">2 passagers</option>
+                        <option value="3">3 passagers</option>
+                        <option value="4">4 passagers</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Rechercher</button>
+            </form>
+        </section>
+
+        <section class="section features">
+            <h2 class="section-title">Nos services</h2>
+            <p class="section-subtitle">Découvrez les différentes options de mobilité durable mises à votre disposition</p>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-icon">🚗</div>
+                    <h3>Covoiturage</h3>
+                    <p>Partagez vos trajets quotidiens avec vos collègues. Économisez sur vos frais de transport tout en réduisant votre impact environnemental.</p>
+                    <a href="pages/covoiturage.html" class="btn btn-secondary">En savoir plus</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🚲</div>
+                    <h3>Location de vélos</h3>
+                    <p>Des vélos classiques et électriques disponibles pour vos déplacements courts. Idéal pour les trajets domicile-travail ou pendant la pause déjeuner.</p>
+                    <a href="pages/location-velo.html" class="btn btn-secondary">Voir les vélos</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🛴</div>
+                    <h3>Trottinettes électriques</h3>
+                    <p>Pratiques et rapides, nos trottinettes électriques vous permettent de vous déplacer facilement dans un rayon de 25 km.</p>
+                    <a href="pages/location-trottinette.html" class="btn btn-secondary">Voir les trottinettes</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Voitures électriques</h3>
+                    <p>Besoin d'un véhicule pour un déplacement professionnel ou personnel ? Réservez l'une de nos voitures électriques en autopartage.</p>
+                    <a href="pages/location-voiture.html" class="btn btn-secondary">Réserver une voiture</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Comment ça marche ?</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Inscrivez-vous</h3>
+                    <p>Créez votre compte en quelques clics avec votre adresse e-mail professionnelle AMD.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Recherchez</h3>
+                    <p>Trouvez un trajet en covoiturage ou un véhicule disponible selon vos besoins.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Réservez</h3>
+                    <p>Réservez en ligne et recevez une confirmation instantanée par e-mail.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Partez !</h3>
+                    <p>Rendez-vous au point de rencontre et profitez de votre trajet éco-responsable.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--amd-gray-dark);">
+            <h2 class="section-title">Trajets disponibles</h2>
+            <p class="section-subtitle">Découvrez les prochains trajets proposés par vos collègues</p>
+            <div class="cards-container">
+                <a href="pages/detail-trajet.html" class="card trip-card">
+                    <div class="driver-info">
+                        <div class="driver-avatar">JD</div>
+                    </div>
+                    <div class="trip-info">
+                        <div class="trip-route">
+                            <span>Paris 15e</span>
+                            <span class="arrow">→</span>
+                            <span>Évry (AMD)</span>
+                        </div>
+                        <div class="trip-details">
+                            <span>📅 Demain 8h30</span>
+                            <span>👥 3 places</span>
+                            <span>🚗 Tesla Model 3</span>
+                        </div>
+                    </div>
+                    <div class="trip-price">Gratuit</div>
+                </a>
+                <a href="pages/detail-trajet.html" class="card trip-card">
+                    <div class="driver-info">
+                        <div class="driver-avatar">ML</div>
+                    </div>
+                    <div class="trip-info">
+                        <div class="trip-route">
+                            <span>Versailles</span>
+                            <span class="arrow">→</span>
+                            <span>Évry (AMD)</span>
+                        </div>
+                        <div class="trip-details">
+                            <span>📅 Lundi 7h45</span>
+                            <span>👥 2 places</span>
+                            <span>🚗 Renault Zoé</span>
+                        </div>
+                    </div>
+                    <div class="trip-price">5 pts</div>
+                </a>
+                <a href="pages/detail-trajet.html" class="card trip-card">
+                    <div class="driver-info">
+                        <div class="driver-avatar">AS</div>
+                    </div>
+                    <div class="trip-info">
+                        <div class="trip-route">
+                            <span>Massy</span>
+                            <span class="arrow">→</span>
+                            <span>Évry (AMD)</span>
+                        </div>
+                        <div class="trip-details">
+                            <span>📅 Mardi 9h00</span>
+                            <span>👥 4 places</span>
+                            <span>🚗 Peugeot e-208</span>
+                        </div>
+                    </div>
+                    <div class="trip-price">Gratuit</div>
+                </a>
+            </div>
+            <div class="text-center mt-3">
+                <a href="pages/rechercher-trajet.html" class="btn btn-primary">Voir tous les trajets</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Vos avantages</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-icon">💰</div>
+                    <h3>Économies</h3>
+                    <p>Réduisez vos frais de transport en partageant les coûts avec vos collègues. Location de véhicules à tarifs préférentiels.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌍</div>
+                    <h3>Écologie</h3>
+                    <p>Chaque trajet partagé réduit les émissions de CO₂. Participez activement à la politique RSE d'AMD.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎁</div>
+                    <h3>Points fidélité</h3>
+                    <p>Gagnez des points à chaque trajet proposé. Échangez-les contre des avantages exclusifs.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Convivialité</h3>
+                    <p>Renforcez les liens avec vos collègues et faites de nouvelles rencontres lors de vos trajets.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>AMD Éco-Mobilité</h4>
+                <p>La plateforme de mobilité durable pour les collaborateurs AMD. Ensemble, construisons un avenir plus vert.</p>
+                <div class="social-links">
+                    <a href="#" title="LinkedIn">in</a>
+                    <a href="#" title="Twitter">𝕏</a>
+                    <a href="#" title="Facebook">f</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="pages/covoiturage.html">Covoiturage</a></li>
+                    <li><a href="pages/location.html">Location</a></li>
+                    <li><a href="pages/comment-ca-marche.html">Comment ça marche</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Mon compte</h4>
+                <ul>
+                    <li><a href="pages/connexion.html">Connexion</a></li>
+                    <li><a href="pages/inscription.html">Inscription</a></li>
+                    <li><a href="pages/dashboard.html">Tableau de bord</a></li>
+                    <li><a href="pages/mes-trajets.html">Mes trajets</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Informations</h4>
+                <ul>
+                    <li><a href="pages/mentions-legales.html">Mentions légales</a></li>
+                    <li><a href="pages/confidentialite.html">Politique de confidentialité</a></li>
+                    <li><a href="pages/cgu.html">Conditions d'utilisation</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 AMD Éco-Mobilité - Tous droits réservés | Plateforme interne AMD</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Statistiques éco-mobilité AMD - Impact environnemental">
+    <title>Statistiques - AMD Éco-Mobilité</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/amd-logo.svg" alt="AMD Logo">
+                <span class="logo-text">Éco-Mobilité</span>
+            </a>
+            <div class="header-actions">
+                <a href="dashboard.html" class="btn btn-primary">Mon espace</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="covoiturage.html">Covoiturage</a>
+                    <div class="dropdown-content">
+                        <a href="rechercher-trajet.html">Rechercher un trajet</a>
+                        <a href="proposer-trajet.html">Proposer un trajet</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="location.html">Location</a>
+                    <div class="dropdown-content">
+                        <a href="location-velo.html">Vélos</a>
+                        <a href="location-trottinette.html">Trottinettes</a>
+                        <a href="location-voiture.html">Voitures électriques</a>
+                    </div>
+                </li>
+                <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="padding: 60px 5%;">
+            <div class="hero-content">
+                <h1>Statistiques Éco-Mobilité</h1>
+                <p>Découvrez l'impact environnemental de notre communauté AMD et suivez nos progrès collectifs.</p>
+            </div>
+        </section>
+
+        <section class="stats-page">
+            <div class="stats-overview">
+                <div class="stat-box">
+                    <h3>CO₂ Économisé</h3>
+                    <span class="big-number">4.2</span>
+                    <span class="unit">tonnes</span>
+                </div>
+                <div class="stat-box">
+                    <h3>Trajets Partagés</h3>
+                    <span class="big-number">2,847</span>
+                    <span class="unit">trajets</span>
+                </div>
+                <div class="stat-box">
+                    <h3>Kilomètres Économisés</h3>
+                    <span class="big-number">18,542</span>
+                    <span class="unit">km</span>
+                </div>
+                <div class="stat-box">
+                    <h3>Utilisateurs Actifs</h3>
+                    <span class="big-number">437</span>
+                    <span class="unit">collaborateurs</span>
+                </div>
+            </div>
+
+            <h2 class="section-title">Impact Environnemental</h2>
+            
+            <div class="charts-container">
+                <div class="chart-card">
+                    <h3>🌱 Objectif CO₂ 2025</h3>
+                    <div class="circular-chart">
+                        <svg viewBox="0 0 160 160">
+                            <defs>
+                                <linearGradient id="gradient-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#0071C5;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="circle-bg" cx="80" cy="80" r="70"></circle>
+                            <circle class="circle-progress percent-75" cx="80" cy="80" r="70"></circle>
+                        </svg>
+                        <div class="circle-text">
+                            <div class="percentage">75%</div>
+                            <div class="label">atteint</div>
+                        </div>
+                    </div>
+                    <p class="text-center mt-2" style="color: var(--amd-gray-light);">Objectif : 5.6 tonnes de CO₂ économisées</p>
+                </div>
+
+                <div class="chart-card">
+                    <h3>🚗 Utilisation des Services</h3>
+                    <div class="bar-chart">
+                        <div class="bar-item">
+                            <span class="bar-label">Covoiturage</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 85%;"></div>
+                            </div>
+                            <span class="bar-value">85%</span>
+                        </div>
+                        <div class="bar-item">
+                            <span class="bar-label">Vélos</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 60%; animation-delay: 0.2s;"></div>
+                            </div>
+                            <span class="bar-value">60%</span>
+                        </div>
+                        <div class="bar-item">
+                            <span class="bar-label">Trottinettes</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 45%; animation-delay: 0.4s;"></div>
+                            </div>
+                            <span class="bar-value">45%</span>
+                        </div>
+                        <div class="bar-item">
+                            <span class="bar-label">Voitures élec.</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 72%; animation-delay: 0.6s;"></div>
+                            </div>
+                            <span class="bar-value">72%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="charts-container">
+                <div class="chart-card">
+                    <h3>⚡ Satisfaction Utilisateurs</h3>
+                    <div class="circular-chart">
+                        <svg viewBox="0 0 160 160">
+                            <circle class="circle-bg" cx="80" cy="80" r="70"></circle>
+                            <circle class="circle-progress percent-85" cx="80" cy="80" r="70" style="animation-delay: 0.3s;"></circle>
+                        </svg>
+                        <div class="circle-text">
+                            <div class="percentage">85%</div>
+                            <div class="label">satisfaits</div>
+                        </div>
+                    </div>
+                    <p class="text-center mt-2" style="color: var(--amd-gray-light);">Note moyenne : 4.2/5 étoiles</p>
+                </div>
+
+                <div class="chart-card">
+                    <h3>📊 Comparaison Mensuelle</h3>
+                    <div class="bar-chart">
+                        <div class="bar-item">
+                            <span class="bar-label">Octobre</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 68%;"></div>
+                            </div>
+                            <span class="bar-value">340</span>
+                        </div>
+                        <div class="bar-item">
+                            <span class="bar-label">Novembre</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 78%; animation-delay: 0.2s;"></div>
+                            </div>
+                            <span class="bar-value">387</span>
+                        </div>
+                        <div class="bar-item">
+                            <span class="bar-label">Décembre</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 92%; animation-delay: 0.4s;"></div>
+                            </div>
+                            <span class="bar-value">456</span>
+                        </div>
+                    </div>
+                    <p class="text-center mt-2" style="color: var(--amd-green);">📈 +18% ce mois-ci</p>
+                </div>
+            </div>
+
+            <h2 class="section-title">Évolution Trimestrielle</h2>
+            
+            <div class="chart-card">
+                <h3>📅 Derniers 6 Mois</h3>
+                <div class="evolution-grid">
+                    <div class="evolution-item">
+                        <div class="month">Juillet 2025</div>
+                        <div class="value">0.5t</div>
+                        <div class="trend up">+12%</div>
+                    </div>
+                    <div class="evolution-item">
+                        <div class="month">Août 2025</div>
+                        <div class="value">0.6t</div>
+                        <div class="trend up">+20%</div>
+                    </div>
+                    <div class="evolution-item">
+                        <div class="month">Septembre 2025</div>
+                        <div class="value">0.7t</div>
+                        <div class="trend up">+16%</div>
+                    </div>
+                    <div class="evolution-item">
+                        <div class="month">Octobre 2025</div>
+                        <div class="value">0.8t</div>
+                        <div class="trend up">+14%</div>
+                    </div>
+                    <div class="evolution-item">
+                        <div class="month">Novembre 2025</div>
+                        <div class="value">0.7t</div>
+                        <div class="trend down">-12%</div>
+                    </div>
+                    <div class="evolution-item">
+                        <div class="month">Décembre 2025</div>
+                        <div class="value">0.9t</div>
+                        <div class="trend up">+28%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-container mt-3">
+                <h3 style="color: var(--amd-cyan); margin-bottom: 20px;">🎯 Nos Objectifs 2026</h3>
+                <div class="bar-chart">
+                    <div class="bar-item">
+                        <span class="bar-label" style="min-width: 200px;">10 tonnes CO₂</span>
+                        <div class="bar-container">
+                            <div class="bar-fill" style="width: 42%; background: linear-gradient(90deg, var(--amd-green), #27ae60);"></div>
+                        </div>
+                        <span class="bar-value">4.2t</span>
+                    </div>
+                    <div class="bar-item">
+                        <span class="bar-label" style="min-width: 200px;">5000 trajets</span>
+                        <div class="bar-container">
+                            <div class="bar-fill" style="width: 57%; background: linear-gradient(90deg, var(--amd-blue), var(--amd-purple)); animation-delay: 0.2s;"></div>
+                        </div>
+                        <span class="bar-value">2847</span>
+                    </div>
+                    <div class="bar-item">
+                        <span class="bar-label" style="min-width: 200px;">600 utilisateurs</span>
+                        <div class="bar-container">
+                            <div class="bar-fill" style="width: 73%; background: linear-gradient(90deg, var(--amd-cyan), var(--amd-blue)); animation-delay: 0.4s;"></div>
+                        </div>
+                        <span class="bar-value">437</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-success mt-3" style="position: relative; z-index: 1;">
+                <span class="alert-icon">🌍</span>
+                <span>Ensemble, nous contribuons à un avenir plus durable. Merci à tous les collaborateurs AMD pour leur engagement !</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>AMD Éco-Mobilité</h4>
+                <p>Solution interne de mobilité durable pour les collaborateurs AMD France.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="covoiturage.html">Covoiturage</a></li>
+                    <li><a href="location.html">Location véhicules</a></li>
+                    <li><a href="statistiques.html">Statistiques</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Informations</h4>
+                <ul>
+                    <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Légal</h4>
+                <ul>
+                    <li><a href="cgu.html">CGU</a></li>
+                    <li><a href="confidentialite.html">Confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 AMD - Advanced Micro Devices, Inc. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

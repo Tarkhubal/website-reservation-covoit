@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Location de véhicules propres AMD - Vélos, trottinettes et voitures électriques">
+    <title>Location - AMD Éco-Mobilité</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/amd-logo.svg" alt="AMD Logo">
+                <span class="logo-text">Éco-Mobilité</span>
+            </a>
+            <div class="header-actions">
+                <a href="connexion.html" class="btn btn-secondary">Connexion</a>
+                <a href="inscription.html" class="btn btn-primary">Inscription</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="covoiturage.html">Covoiturage</a>
+                    <div class="dropdown-content">
+                        <a href="rechercher-trajet.html">Rechercher un trajet</a>
+                        <a href="proposer-trajet.html">Proposer un trajet</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="location.html" class="active">Location</a>
+                    <div class="dropdown-content">
+                        <a href="location-velo.html">Vélos</a>
+                        <a href="location-trottinette.html">Trottinettes</a>
+                        <a href="location-voiture.html">Voitures électriques</a>
+                    </div>
+                </li>
+                <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="padding: 60px 5%;">
+            <div class="hero-content">
+                <h1>Location de véhicules propres</h1>
+                <p>AMD met à votre disposition une flotte de véhicules non polluants pour vos déplacements professionnels et personnels.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Nos véhicules</h2>
+            <div class="cards-container">
+                <div class="card vehicle-card">
+                    <div class="vehicle-image">🚲</div>
+                    <h3>Vélos</h3>
+                    <p>Vélos classiques et électriques pour vos trajets quotidiens.</p>
+                    <div class="vehicle-specs">
+                        <span>⚡ Électrique</span>
+                        <span>🔋 50 km</span>
+                    </div>
+                    <div class="vehicle-price">Gratuit <span>/ jour</span></div>
+                    <a href="location-velo.html" class="btn btn-primary mt-2" style="width: 100%;">Voir les vélos</a>
+                </div>
+                
+                <div class="card vehicle-card">
+                    <div class="vehicle-image">🛴</div>
+                    <h3>Trottinettes</h3>
+                    <p>Trottinettes électriques pour les courtes distances.</p>
+                    <div class="vehicle-specs">
+                        <span>⚡ Électrique</span>
+                        <span>🔋 25 km</span>
+                    </div>
+                    <div class="vehicle-price">Gratuit <span>/ jour</span></div>
+                    <a href="location-trottinette.html" class="btn btn-primary mt-2" style="width: 100%;">Voir les trottinettes</a>
+                </div>
+                
+                <div class="card vehicle-card">
+                    <div class="vehicle-image">🚗</div>
+                    <h3>Voitures électriques</h3>
+                    <p>Voitures électriques en autopartage pour vos déplacements plus longs.</p>
+                    <div class="vehicle-specs">
+                        <span>⚡ Électrique</span>
+                        <span>🔋 400 km</span>
+                    </div>
+                    <div class="vehicle-price">15 pts <span>/ jour</span></div>
+                    <a href="location-voiture.html" class="btn btn-primary mt-2" style="width: 100%;">Voir les voitures</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--amd-gray-dark);">
+            <h2 class="section-title">Comment ça marche ?</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Choisissez</h3>
+                    <p>Sélectionnez le type de véhicule adapté à vos besoins.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Réservez</h3>
+                    <p>Réservez en ligne le créneau horaire souhaité.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Récupérez</h3>
+                    <p>Récupérez le véhicule au point de départ indiqué.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Restituez</h3>
+                    <p>Ramenez le véhicule au point de retour à la fin de votre location.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Points de retrait</h2>
+            <p class="section-subtitle">Tous nos véhicules sont disponibles sur le site AMD de Paris 75001</p>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>🅿️ Station vélos - Bâtiment A</h3>
+                    <p>10 vélos classiques + 8 vélos électriques</p>
+                    <p class="text-gray mt-1">📍 Entrée principale, niveau 0</p>
+                    <p class="text-green mt-1">✓ 6 vélos disponibles</p>
+                </div>
+                <div class="card">
+                    <h3>🅿️ Station trottinettes - Bâtiment B</h3>
+                    <p>15 trottinettes électriques</p>
+                    <p class="text-gray mt-1">📍 Parking couvert, niveau -1</p>
+                    <p class="text-green mt-1">✓ 9 trottinettes disponibles</p>
+                </div>
+                <div class="card">
+                    <h3>🅿️ Parking voitures - Zone C</h3>
+                    <p>5 voitures électriques en autopartage</p>
+                    <p class="text-gray mt-1">📍 Parking visiteurs, places 1-5</p>
+                    <p class="text-green mt-1">✓ 2 voitures disponibles</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--amd-gray-dark);">
+            <h2 class="section-title">Tarification</h2>
+            <div class="form-container" style="max-width: 800px; margin: 0 auto;">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Véhicule</th>
+                                <th>Demi-journée</th>
+                                <th>Journée</th>
+                                <th>Week-end</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>🚲 Vélo classique</td>
+                                <td>Gratuit</td>
+                                <td>Gratuit</td>
+                                <td>Gratuit</td>
+                            </tr>
+                            <tr>
+                                <td>🚲 Vélo électrique</td>
+                                <td>Gratuit</td>
+                                <td>Gratuit</td>
+                                <td>5 pts</td>
+                            </tr>
+                            <tr>
+                                <td>🛴 Trottinette électrique</td>
+                                <td>Gratuit</td>
+                                <td>Gratuit</td>
+                                <td>5 pts</td>
+                            </tr>
+                            <tr>
+                                <td>🚗 Voiture électrique</td>
+                                <td>10 pts</td>
+                                <td>15 pts</td>
+                                <td>25 pts</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-gray text-center mt-2">Les points peuvent être gagnés en proposant des trajets en covoiturage ou échangés contre des avantages.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>AMD Éco-Mobilité</h4>
+                <p>La plateforme de mobilité durable pour les collaborateurs AMD.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="covoiturage.html">Covoiturage</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Informations</h4>
+                <ul>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+                    <li><a href="cgu.html">Conditions d'utilisation</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 AMD Éco-Mobilité - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

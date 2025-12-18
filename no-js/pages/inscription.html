@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Créez votre compte AMD Éco-Mobilité">
+    <title>Inscription - AMD Éco-Mobilité</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/amd-logo.svg" alt="AMD Logo">
+                <span class="logo-text">Éco-Mobilité</span>
+            </a>
+            <div class="header-actions">
+                <a href="connexion.html" class="btn btn-secondary">Connexion</a>
+                <a href="inscription.html" class="btn btn-primary">Inscription</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="covoiturage.html">Covoiturage</a>
+                    <div class="dropdown-content">
+                        <a href="rechercher-trajet.html">Rechercher un trajet</a>
+                        <a href="proposer-trajet.html">Proposer un trajet</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="location.html">Location</a>
+                    <div class="dropdown-content">
+                        <a href="location-velo.html">Vélos</a>
+                        <a href="location-trottinette.html">Trottinettes</a>
+                        <a href="location-voiture.html">Voitures électriques</a>
+                    </div>
+                </li>
+                <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <div class="form-container">
+                <h1 class="form-title">Créer un compte</h1>
+                
+                <form action="confirmation-inscription.html" method="get">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Jean" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom" class="form-control" placeholder="Dupont" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Adresse e-mail professionnelle</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="prenom.nom@amd.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="matricule">Matricule employé</label>
+                        <input type="text" id="matricule" name="matricule" class="form-control" placeholder="AMD-12345" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="departement">Département</label>
+                        <select id="departement" name="departement" class="form-control" required>
+                            <option value="">Sélectionnez votre département</option>
+                            <option value="rh">Ressources Humaines</option>
+                            <option value="it">IT / Informatique</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="rd">Recherche & Développement</option>
+                            <option value="production">Production</option>
+                            <option value="finance">Finance</option>
+                            <option value="logistique">Logistique</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telephone">Téléphone mobile</label>
+                        <input type="tel" id="telephone" name="telephone" class="form-control" placeholder="06 12 34 56 78" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="password">Mot de passe</label>
+                            <input type="password" id="password" name="password" class="form-control" placeholder="Min. 8 caractères" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password-confirm">Confirmer</label>
+                            <input type="password" id="password-confirm" name="password-confirm" class="form-control" placeholder="Confirmez le mot de passe" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-check">
+                            <input type="checkbox" name="conducteur">
+                            <span>Je souhaite proposer des trajets en tant que conducteur</span>
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-check">
+                            <input type="checkbox" name="cgu" required>
+                            <span>J'accepte les <a href="cgu.html" style="color: var(--amd-white);">conditions d'utilisation</a> et la <a href="confidentialite.html" style="color: var(--amd-white);">politique de confidentialité</a></span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Créer mon compte</button>
+                </form>
+                
+                <div class="text-center mt-3">
+                    <p class="text-gray">Déjà inscrit ?</p>
+                    <a href="connexion.html" class="btn btn-secondary mt-1">Se connecter</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>AMD Éco-Mobilité</h4>
+                <p>La plateforme de mobilité durable pour les collaborateurs AMD.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Informations</h4>
+                <ul>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+                    <li><a href="cgu.html">Conditions d'utilisation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 AMD Éco-Mobilité - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

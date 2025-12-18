@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proposer un trajet en covoiturage AMD">
+    <title>Proposer un trajet - AMD Éco-Mobilité</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/amd-logo.svg" alt="AMD Logo">
+                <span class="logo-text">Éco-Mobilité</span>
+            </a>
+            <div class="header-actions">
+                <a href="connexion.html" class="btn btn-secondary">Connexion</a>
+                <a href="inscription.html" class="btn btn-primary">Inscription</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="covoiturage.html" class="active">Covoiturage</a>
+                    <div class="dropdown-content">
+                        <a href="rechercher-trajet.html">Rechercher un trajet</a>
+                        <a href="proposer-trajet.html">Proposer un trajet</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="location.html">Location</a>
+                    <div class="dropdown-content">
+                        <a href="location-velo.html">Vélos</a>
+                        <a href="location-trottinette.html">Trottinettes</a>
+                        <a href="location-voiture.html">Voitures électriques</a>
+                    </div>
+                </li>
+                <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section" style="max-width: 900px;">
+            <div class="form-container">
+                <h1 class="form-title">Proposer un trajet</h1>
+                
+                <div class="tabs mb-3">
+                    <input type="radio" name="type-trajet" id="tab1" checked>
+                    <input type="radio" name="type-trajet" id="tab2">
+                    <input type="radio" name="type-trajet" id="tab3">
+                    
+                    <div class="tabs-nav">
+                        <label for="tab1">Trajet unique</label>
+                        <label for="tab2">Trajet régulier</label>
+                        <label for="tab3">Aller-retour</label>
+                    </div>
+                    
+                    <div class="tabs-content">
+                        <div class="tab-content">
+                            <form action="confirmation-trajet.html" method="get">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="depart1">Lieu de départ</label>
+                                        <input type="text" id="depart1" name="depart" class="form-control" placeholder="Adresse de départ" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="arrivee1">Lieu d'arrivée</label>
+                                        <input type="text" id="arrivee1" name="arrivee" class="form-control" placeholder="Adresse d'arrivée" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="date1">Date du trajet</label>
+                                        <input type="date" id="date1" name="date" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="heure1">Heure de départ</label>
+                                        <input type="time" id="heure1" name="heure" class="form-control" value="08:00" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="places1">Places disponibles</label>
+                                        <select id="places1" name="places" class="form-control" required>
+                                            <option value="1">1 place</option>
+                                            <option value="2">2 places</option>
+                                            <option value="3" selected>3 places</option>
+                                            <option value="4">4 places</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vehicule1">Véhicule</label>
+                                        <select id="vehicule1" name="vehicule" class="form-control" required>
+                                            <option value="">Sélectionnez votre véhicule</option>
+                                            <option value="tesla3">Tesla Model 3</option>
+                                            <option value="zoe">Renault Zoé</option>
+                                            <option value="autre">Autre véhicule</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="rdv1">Point de rendez-vous</label>
+                                    <input type="text" id="rdv1" name="rdv" class="form-control" placeholder="Ex: Métro Boucicaut, sortie 2">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="contribution1">Contribution demandée</label>
+                                    <select id="contribution1" name="contribution" class="form-control">
+                                        <option value="gratuit" selected>Gratuit</option>
+                                        <option value="3pts">3 points</option>
+                                        <option value="5pts">5 points</option>
+                                        <option value="10pts">10 points</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="commentaire1">Commentaire (optionnel)</label>
+                                    <textarea id="commentaire1" name="commentaire" class="form-control" placeholder="Informations complémentaires..."></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">Publier le trajet</button>
+                            </form>
+                        </div>
+                        
+                        <div class="tab-content">
+                            <form action="confirmation-trajet.html" method="get">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="depart2">Lieu de départ</label>
+                                        <input type="text" id="depart2" name="depart" class="form-control" placeholder="Adresse de départ" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="arrivee2">Lieu d'arrivée</label>
+                                        <input type="text" id="arrivee2" name="arrivee" class="form-control" placeholder="Adresse d'arrivée" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Jours de la semaine</label>
+                                    <div class="flex gap-2 flex-wrap mt-1">
+                                        <label class="form-check"><input type="checkbox" name="jours" value="lundi"> Lundi</label>
+                                        <label class="form-check"><input type="checkbox" name="jours" value="mardi"> Mardi</label>
+                                        <label class="form-check"><input type="checkbox" name="jours" value="mercredi"> Mercredi</label>
+                                        <label class="form-check"><input type="checkbox" name="jours" value="jeudi"> Jeudi</label>
+                                        <label class="form-check"><input type="checkbox" name="jours" value="vendredi"> Vendredi</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="heure2">Heure de départ</label>
+                                        <input type="time" id="heure2" name="heure" class="form-control" value="08:00" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="places2">Places disponibles</label>
+                                        <select id="places2" name="places" class="form-control" required>
+                                            <option value="1">1 place</option>
+                                            <option value="2">2 places</option>
+                                            <option value="3" selected>3 places</option>
+                                            <option value="4">4 places</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="debut2">Date de début</label>
+                                        <input type="date" id="debut2" name="debut" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fin2">Date de fin</label>
+                                        <input type="date" id="fin2" name="fin" class="form-control">
+                                    </div>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">Publier le trajet régulier</button>
+                            </form>
+                        </div>
+                        
+                        <div class="tab-content">
+                            <form action="confirmation-trajet.html" method="get">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="depart3">Lieu de départ</label>
+                                        <input type="text" id="depart3" name="depart" class="form-control" placeholder="Adresse de départ" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="arrivee3">Lieu d'arrivée</label>
+                                        <input type="text" id="arrivee3" name="arrivee" class="form-control" placeholder="Adresse d'arrivée" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="date3">Date</label>
+                                        <input type="date" id="date3" name="date" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="heure-aller">Heure aller</label>
+                                        <input type="time" id="heure-aller" name="heure-aller" class="form-control" value="08:00" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="heure-retour">Heure retour</label>
+                                        <input type="time" id="heure-retour" name="heure-retour" class="form-control" value="18:00" required>
+                                    </div>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">Publier l'aller-retour</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2025 AMD Éco-Mobilité - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

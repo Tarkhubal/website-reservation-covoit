@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Historique des trajets et locations - AMD Éco-Mobilité">
+    <title>Historique - AMD Éco-Mobilité</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/amd-logo.svg" alt="AMD Logo">
+                <span class="logo-text">Éco-Mobilité</span>
+            </a>
+            <div class="header-actions">
+                <a href="profil.html" class="btn btn-secondary">👤 Mon profil</a>
+                <a href="connexion.html" class="btn btn-primary">Déconnexion</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="covoiturage.html">Covoiturage</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <aside class="sidebar">
+            <div class="user-profile">
+                <div class="user-avatar">JD</div>
+                <h3>Jean Dupont</h3>
+                <p class="text-gray">IT / Informatique</p>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="dashboard.html">🏠 Tableau de bord</a>
+                <a href="statistiques.html">📊 Statistiques</a>
+                <a href="mes-trajets.html">🚗 Mes trajets</a>
+                <a href="mes-reservations.html">📅 Mes réservations</a>
+                <a href="historique.html" class="active">📜 Historique</a>
+                <a href="mes-points.html">🎁 Mes points</a>
+                <a href="profil.html">👤 Mon profil</a>
+                <a href="parametres.html">⚙️ Paramètres</a>
+            </nav>
+        </aside>
+
+        <div class="dashboard-content">
+            <h1 class="mb-3">Historique complet</h1>
+
+            <div class="stats-grid mb-3">
+                <div class="stat-card">
+                    <span class="stat-number">45</span>
+                    <span class="stat-label">Trajets en tant que conducteur</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Trajets en tant que passager</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">Locations de véhicules</span>
+                </div>
+            </div>
+
+            <div class="tabs mb-3">
+                <input type="radio" name="histo-tabs" id="tab1" checked>
+                <input type="radio" name="histo-tabs" id="tab2">
+                <input type="radio" name="histo-tabs" id="tab3">
+                
+                <div class="tabs-nav">
+                    <label for="tab1">Tous</label>
+                    <label for="tab2">Covoiturages</label>
+                    <label for="tab3">Locations</label>
+                </div>
+                
+                <div class="tabs-content">
+                    <div class="tab-content">
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Type</th>
+                                        <th>Description</th>
+                                        <th>Statut</th>
+                                        <th>Impact CO₂</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>17/12/2025</td>
+                                        <td>🚗 Conducteur</td>
+                                        <td>Paris 15e → Paris 75001</td>
+                                        <td><span class="badge badge-success">Terminé</span></td>
+                                        <td class="text-green">-4.2 kg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16/12/2025</td>
+                                        <td>🚗 Conducteur</td>
+                                        <td>Paris 75001 → Paris 15e</td>
+                                        <td><span class="badge badge-success">Terminé</span></td>
+                                        <td class="text-green">-3.8 kg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14/12/2025</td>
+                                        <td>⚡ Location</td>
+                                        <td>Tesla Model 3 (1 jour)</td>
+                                        <td><span class="badge badge-success">Terminé</span></td>
+                                        <td class="text-green">-12.0 kg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13/12/2025</td>
+                                        <td>🧑 Passager</td>
+                                        <td>Versailles → Paris 75001</td>
+                                        <td><span class="badge badge-success">Terminé</span></td>
+                                        <td class="text-green">-2.1 kg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12/12/2025</td>
+                                        <td>🚲 Location</td>
+                                        <td>Vélo électrique (journée)</td>
+                                        <td><span class="badge badge-success">Terminé</span></td>
+                                        <td class="text-green">-1.5 kg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>09/12/2025</td>
+                                        <td>🚗 Conducteur</td>
+                                        <td>Paris 15e → Paris 75001</td>
+                                        <td><span class="badge badge-danger">Annulé</span></td>
+                                        <td class="text-gray">-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content">
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Rôle</th>
+                                        <th>Trajet</th>
+                                        <th>Passagers</th>
+                                        <th>Statut</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>17/12/2025</td>
+                                        <td>Conducteur</td>
+                                        <td>Paris 15e → Paris 75001</td>
+                                        <td>3</td>
+                                        <td><span class="badge badge-success">Terminé</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>16/12/2025</td>
+                                        <td>Conducteur</td>
+                                        <td>Paris 75001 → Paris 15e</td>
+                                        <td>2</td>
+                                        <td><span class="badge badge-success">Terminé</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>13/12/2025</td>
+                                        <td>Passager</td>
+                                        <td>Versailles → Paris 75001</td>
+                                        <td>-</td>
+                                        <td><span class="badge badge-success">Terminé</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content">
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Type</th>
+                                        <th>Véhicule</th>
+                                        <th>Durée</th>
+                                        <th>Statut</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>14/12/2025</td>
+                                        <td>⚡ Voiture</td>
+                                        <td>Tesla Model 3 #4</td>
+                                        <td>1 jour</td>
+                                        <td><span class="badge badge-success">Terminé</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>12/12/2025</td>
+                                        <td>🚲 Vélo</td>
+                                        <td>Vélo électrique #12</td>
+                                        <td>Journée</td>
+                                        <td><span class="badge badge-success">Terminé</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>07/12/2025</td>
+                                        <td>🛴 Trottinette</td>
+                                        <td>Trottinette #7</td>
+                                        <td>Demi-journée</td>
+                                        <td><span class="badge badge-success">Terminé</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-info">
+                <span class="alert-icon">🌍</span>
+                <span><strong>Votre impact depuis le début :</strong> Vous avez économisé 156 kg de CO₂, soit l'équivalent de 15 arbres plantés !</span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2025 AMD Éco-Mobilité - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

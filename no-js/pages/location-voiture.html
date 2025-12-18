@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Location de voitures électriques AMD en autopartage">
+    <title>Location de voitures électriques - AMD Éco-Mobilité</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/amd-logo.svg" alt="AMD Logo">
+                <span class="logo-text">Éco-Mobilité</span>
+            </a>
+            <div class="header-actions">
+                <a href="connexion.html" class="btn btn-secondary">Connexion</a>
+                <a href="inscription.html" class="btn btn-primary">Inscription</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="covoiturage.html">Covoiturage</a>
+                    <div class="dropdown-content">
+                        <a href="rechercher-trajet.html">Rechercher un trajet</a>
+                        <a href="proposer-trajet.html">Proposer un trajet</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="location.html" class="active">Location</a>
+                    <div class="dropdown-content">
+                        <a href="location-velo.html">Vélos</a>
+                        <a href="location-trottinette.html">Trottinettes</a>
+                        <a href="location-voiture.html">Voitures électriques</a>
+                    </div>
+                </li>
+                <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="padding: 40px 5%;">
+            <div class="hero-content">
+                <h1>🚗 Voitures électriques en autopartage</h1>
+                <p>Pour vos déplacements professionnels ou personnels, réservez l'une de nos voitures 100% électriques.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Notre flotte</h2>
+            <div class="cards-container">
+                <div class="card vehicle-card">
+                    <div class="vehicle-image" style="background: linear-gradient(135deg, var(--amd-red), var(--amd-red-dark));">🚗</div>
+                    <h3>Tesla Model 3 #1</h3>
+                    <div class="flex gap-1 flex-center flex-wrap mb-1">
+                        <span class="badge badge-success">Disponible</span>
+                        <span class="badge badge-info">95%</span>
+                    </div>
+                    <div class="vehicle-specs">
+                        <span>🔋 400 km</span>
+                        <span>👥 5 places</span>
+                    </div>
+                    <p class="text-gray" style="font-size: 0.9rem;">Berline · Boîte auto · GPS · Bluetooth</p>
+                    <div class="vehicle-price mt-1">15 pts <span>/ jour</span></div>
+                    <a href="reservation-vehicule.html?type=voiture&id=TM3-1" class="btn btn-primary mt-2" style="width: 100%;">Réserver</a>
+                </div>
+
+                <div class="card vehicle-card">
+                    <div class="vehicle-image" style="background: linear-gradient(135deg, #3498db, #2980b9);">🚗</div>
+                    <h3>Renault Zoé #2</h3>
+                    <div class="flex gap-1 flex-center flex-wrap mb-1">
+                        <span class="badge badge-success">Disponible</span>
+                        <span class="badge badge-info">82%</span>
+                    </div>
+                    <div class="vehicle-specs">
+                        <span>🔋 300 km</span>
+                        <span>👥 5 places</span>
+                    </div>
+                    <p class="text-gray" style="font-size: 0.9rem;">Citadine · Boîte auto · GPS · Bluetooth</p>
+                    <div class="vehicle-price mt-1">12 pts <span>/ jour</span></div>
+                    <a href="reservation-vehicule.html?type=voiture&id=RZ-2" class="btn btn-primary mt-2" style="width: 100%;">Réserver</a>
+                </div>
+
+                <div class="card vehicle-card">
+                    <div class="vehicle-image" style="background: linear-gradient(135deg, #2ecc71, #27ae60);">🚗</div>
+                    <h3>Peugeot e-208 #3</h3>
+                    <div class="flex gap-1 flex-center flex-wrap mb-1">
+                        <span class="badge badge-warning">Réservée</span>
+                    </div>
+                    <div class="vehicle-specs">
+                        <span>🔋 340 km</span>
+                        <span>👥 5 places</span>
+                    </div>
+                    <p class="text-gray" style="font-size: 0.9rem;">Citadine · Boîte auto · GPS · Bluetooth</p>
+                    <div class="vehicle-price mt-1">12 pts <span>/ jour</span></div>
+                    <button class="btn btn-secondary mt-2" style="width: 100%;" disabled>Indisponible</button>
+                </div>
+
+                <div class="card vehicle-card">
+                    <div class="vehicle-image" style="background: linear-gradient(135deg, var(--amd-red), var(--amd-red-dark));">🚗</div>
+                    <h3>Tesla Model Y #4</h3>
+                    <div class="flex gap-1 flex-center flex-wrap mb-1">
+                        <span class="badge badge-warning">Réservée</span>
+                    </div>
+                    <div class="vehicle-specs">
+                        <span>🔋 450 km</span>
+                        <span>👥 7 places</span>
+                    </div>
+                    <p class="text-gray" style="font-size: 0.9rem;">SUV · Boîte auto · GPS · Bluetooth</p>
+                    <div class="vehicle-price mt-1">20 pts <span>/ jour</span></div>
+                    <button class="btn btn-secondary mt-2" style="width: 100%;" disabled>Indisponible</button>
+                </div>
+
+                <div class="card vehicle-card">
+                    <div class="vehicle-image" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">🚗</div>
+                    <h3>VW ID.3 #5</h3>
+                    <div class="flex gap-1 flex-center flex-wrap mb-1">
+                        <span class="badge badge-success">Disponible</span>
+                        <span class="badge badge-info">100%</span>
+                    </div>
+                    <div class="vehicle-specs">
+                        <span>🔋 350 km</span>
+                        <span>👥 5 places</span>
+                    </div>
+                    <p class="text-gray" style="font-size: 0.9rem;">Compacte · Boîte auto · GPS · Bluetooth</p>
+                    <div class="vehicle-price mt-1">14 pts <span>/ jour</span></div>
+                    <a href="reservation-vehicule.html?type=voiture&id=VW-5" class="btn btn-primary mt-2" style="width: 100%;">Réserver</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--amd-gray-dark);">
+            <h2 class="section-title">Conditions de location</h2>
+            <div class="form-container" style="max-width: 800px; margin: 0 auto;">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <input type="checkbox" id="acc1" class="accordion-header">
+                        <label for="acc1" class="accordion-label">Conditions requises</label>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <ul style="list-style: disc; padding-left: 20px;">
+                                    <li>Être salarié AMD depuis au moins 3 mois</li>
+                                    <li>Permis de conduire valide depuis au moins 2 ans</li>
+                                    <li>Avoir validé la charte d'utilisation des véhicules</li>
+                                    <li>Disposer de suffisamment de points sur votre compte</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <input type="checkbox" id="acc2" class="accordion-header">
+                        <label for="acc2" class="accordion-label">Assurance et responsabilité</label>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Tous les véhicules sont assurés tous risques par AMD. En cas de sinistre responsable, une franchise de 500€ pourra être appliquée. Cette franchise est couverte si vous disposez de l'option « Zéro franchise » (50 points/an).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <input type="checkbox" id="acc3" class="accordion-header">
+                        <label for="acc3" class="accordion-label">Recharge et autonomie</label>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Les véhicules doivent être restitués avec au moins 20% de batterie. Des bornes de recharge sont disponibles sur le parking AMD (gratuites) et via le réseau Ionity (carte fournie).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <input type="checkbox" id="acc4" class="accordion-header">
+                        <label for="acc4" class="accordion-label">Annulation</label>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Annulation gratuite jusqu'à 24h avant la réservation. En cas d'annulation tardive ou de no-show, vos points ne seront pas remboursés.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2025 AMD Éco-Mobilité - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

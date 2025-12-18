@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tableau de bord AMD Éco-Mobilité - Gérez vos trajets et réservations">
+    <title>Tableau de bord - AMD Éco-Mobilité</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/amd-logo.svg" alt="AMD Logo">
+                <span class="logo-text">Éco-Mobilité</span>
+            </a>
+            <div class="header-actions">
+                <a href="profil.html" class="btn btn-secondary">👤 Mon profil</a>
+                <a href="connexion.html" class="btn btn-primary">Déconnexion</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="covoiturage.html">Covoiturage</a>
+                    <div class="dropdown-content">
+                        <a href="rechercher-trajet.html">Rechercher un trajet</a>
+                        <a href="proposer-trajet.html">Proposer un trajet</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="location.html">Location</a>
+                    <div class="dropdown-content">
+                        <a href="location-velo.html">Vélos</a>
+                        <a href="location-trottinette.html">Trottinettes</a>
+                        <a href="location-voiture.html">Voitures électriques</a>
+                    </div>
+                </li>
+                <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <aside class="sidebar">
+            <div class="user-profile">
+                <div class="user-avatar">JD</div>
+                <h3>Jean Dupont</h3>
+                <p class="text-gray">IT / Informatique</p>
+                <span class="badge badge-success">Conducteur vérifié</span>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="dashboard.html" class="active">📊 Tableau de bord</a>                <a href="statistiques.html">📊 Statistiques</a>                <a href="mes-trajets.html">🚗 Mes trajets</a>
+                <a href="mes-reservations.html">📅 Mes réservations</a>
+                <a href="historique.html">📜 Historique</a>
+                <a href="mes-points.html">🎁 Mes points</a>
+                <a href="profil.html">👤 Mon profil</a>
+                <a href="parametres.html">⚙️ Paramètres</a>
+            </nav>
+        </aside>
+
+        <div class="dashboard-content">
+            <div class="dashboard-header">
+                <h1>Bienvenue, Jean !</h1>
+                <a href="proposer-trajet.html" class="btn btn-primary">+ Proposer un trajet</a>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">24</span>
+                    <span class="stat-label">Trajets effectués</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Trajets proposés</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">156 kg</span>
+                    <span class="stat-label">CO₂ économisés</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">450</span>
+                    <span class="stat-label">Points fidélité</span>
+                </div>
+            </div>
+
+            <div class="alert alert-success">
+                <span class="alert-icon">🎉</span>
+                <span>Félicitations ! Vous avez économisé 156 kg de CO₂ ce mois-ci. Continuez ainsi !</span>
+            </div>
+
+            <section class="mb-3">
+                <h2 class="mb-2">Prochains trajets</h2>
+                <div class="cards-container" style="padding: 0;">
+                    <div class="card trip-card">
+                        <div class="driver-info">
+                            <div class="driver-avatar">ML</div>
+                        </div>
+                        <div class="trip-info">
+                            <div class="trip-route">
+                                <span>Versailles</span>
+                                <span class="arrow">→</span>
+                                <span>Paris 75001 (AMD)</span>
+                            </div>
+                            <div class="trip-details">
+                                <span>📅 Demain 7h45</span>
+                                <span>👥 Passager</span>
+                            </div>
+                        </div>
+                        <a href="detail-trajet.html" class="btn btn-secondary">Détails</a>
+                    </div>
+                    <div class="card trip-card">
+                        <div class="driver-info">
+                            <div class="driver-avatar" style="background: var(--amd-green);">JD</div>
+                        </div>
+                        <div class="trip-info">
+                            <div class="trip-route">
+                                <span>Paris 75001 (AMD)</span>
+                                <span class="arrow">→</span>
+                                <span>Paris 15e</span>
+                            </div>
+                            <div class="trip-details">
+                                <span>📅 Demain 18h00</span>
+                                <span>👥 Conducteur · 2 passagers</span>
+                            </div>
+                        </div>
+                        <a href="detail-trajet.html" class="btn btn-secondary">Gérer</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-3">
+                <h2 class="mb-2">Réservations en cours</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Véhicule</th>
+                                <th>Date</th>
+                                <th>Durée</th>
+                                <th>Statut</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>🚲 Vélo</td>
+                                <td>Vélo électrique #12</td>
+                                <td>17/12/2025</td>
+                                <td>Journée</td>
+                                <td><span class="badge badge-success">Confirmée</span></td>
+                                <td><a href="detail-reservation.html" class="btn btn-secondary" style="padding: 8px 15px;">Voir</a></td>
+                            </tr>
+                            <tr>
+                                <td>⚡ Voiture</td>
+                                <td>Tesla Model 3 #4</td>
+                                <td>19/12/2025</td>
+                                <td>2 jours</td>
+                                <td><span class="badge badge-warning">En attente</span></td>
+                                <td><a href="detail-reservation.html" class="btn btn-secondary" style="padding: 8px 15px;">Voir</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="mb-2">Actions rapides</h2>
+                <div class="flex gap-2 flex-wrap">
+                    <a href="rechercher-trajet.html" class="btn btn-secondary">🔍 Rechercher un trajet</a>
+                    <a href="proposer-trajet.html" class="btn btn-secondary">🚗 Proposer un trajet</a>
+                    <a href="location.html" class="btn btn-secondary">🚲 Louer un véhicule</a>
+                    <a href="mes-points.html" class="btn btn-secondary">🎁 Échanger mes points</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2025 AMD Éco-Mobilité - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

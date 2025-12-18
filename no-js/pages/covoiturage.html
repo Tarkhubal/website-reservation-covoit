@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Covoiturage AMD - Partagez vos trajets avec vos collègues">
+    <title>Covoiturage - AMD Éco-Mobilité</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/amd-logo.svg" alt="AMD Logo">
+                <span class="logo-text">Éco-Mobilité</span>
+            </a>
+            <div class="header-actions">
+                <a href="connexion.html" class="btn btn-secondary">Connexion</a>
+                <a href="inscription.html" class="btn btn-primary">Inscription</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="covoiturage.html" class="active">Covoiturage</a>
+                    <div class="dropdown-content">
+                        <a href="rechercher-trajet.html">Rechercher un trajet</a>
+                        <a href="proposer-trajet.html">Proposer un trajet</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="location.html">Location</a>
+                    <div class="dropdown-content">
+                        <a href="location-velo.html">Vélos</a>
+                        <a href="location-trottinette.html">Trottinettes</a>
+                        <a href="location-voiture.html">Voitures électriques</a>
+                    </div>
+                </li>
+                <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="padding: 60px 5%;">
+            <div class="hero-content">
+                <h1>Covoiturage AMD</h1>
+                <p>Partagez vos trajets quotidiens avec vos collègues. Économisez sur vos frais de transport, réduisez votre empreinte carbone et créez du lien social.</p>
+                <div class="hero-buttons">
+                    <a href="rechercher-trajet.html" class="btn btn-primary">🔍 Rechercher un trajet</a>
+                    <a href="proposer-trajet.html" class="btn btn-secondary">🚗 Proposer un trajet</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Pourquoi covoiturer ?</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-icon">💰</div>
+                    <h3>Économies garanties</h3>
+                    <p>Divisez vos frais de carburant et de péage. En moyenne, économisez 150 € par mois sur vos trajets domicile-travail.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌍</div>
+                    <h3>Impact environnemental</h3>
+                    <p>Une voiture partagée = moins d'émissions de CO₂. Contribuez à l'objectif zéro carbone d'AMD.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⏰</div>
+                    <h3>Gain de temps</h3>
+                    <p>Profitez des voies réservées au covoiturage et des places de parking dédiées sur le site AMD.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Convivialité</h3>
+                    <p>Rencontrez des collègues d'autres services et rendez vos trajets plus agréables.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--amd-gray-dark);">
+            <h2 class="section-title">Zones de covoiturage</h2>
+            <p class="section-subtitle">Retrouvez-vous facilement grâce à nos points de rendez-vous sur le parking AMD</p>
+            
+            <div class="cards-container">
+                <div class="card">
+                    <h3>🅿️ Zone A - Entrée principale</h3>
+                    <p>Places 1 à 20 - Idéal pour les départs vers Paris et banlieue Nord</p>
+                    <p class="text-gray mt-1">📍 Bâtiment A, niveau 0</p>
+                </div>
+                <div class="card">
+                    <h3>🅿️ Zone B - Parking couvert</h3>
+                    <p>Places 21 à 40 - Pour les départs vers Versailles et banlieue Ouest</p>
+                    <p class="text-gray mt-1">📍 Bâtiment B, niveau -1</p>
+                </div>
+                <div class="card">
+                    <h3>🅿️ Zone C - Parking visiteurs</h3>
+                    <p>Places 41 à 60 - Pour les départs vers Massy et banlieue Sud</p>
+                    <p class="text-gray mt-1">📍 Entrée secondaire</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Trajets populaires</h2>
+            <div class="cards-container">
+                <a href="resultats-recherche.html" class="card trip-card">
+                    <div class="driver-info">
+                        <div class="driver-avatar">+5</div>
+                    </div>
+                    <div class="trip-info">
+                        <div class="trip-route">
+                            <span>Paris</span>
+                            <span class="arrow">→</span>
+                            <span>Paris 75001 (AMD)</span>
+                        </div>
+                        <div class="trip-details">
+                            <span>12 trajets/jour</span>
+                            <span>~45 min</span>
+                        </div>
+                    </div>
+                    <span class="badge badge-primary">Populaire</span>
+                </a>
+                <a href="resultats-recherche.html" class="card trip-card">
+                    <div class="driver-info">
+                        <div class="driver-avatar">+3</div>
+                    </div>
+                    <div class="trip-info">
+                        <div class="trip-route">
+                            <span>Versailles</span>
+                            <span class="arrow">→</span>
+                            <span>Paris 75001 (AMD)</span>
+                        </div>
+                        <div class="trip-details">
+                            <span>8 trajets/jour</span>
+                            <span>~35 min</span>
+                        </div>
+                    </div>
+                    <span class="badge badge-info">Fréquent</span>
+                </a>
+                <a href="resultats-recherche.html" class="card trip-card">
+                    <div class="driver-info">
+                        <div class="driver-avatar">+4</div>
+                    </div>
+                    <div class="trip-info">
+                        <div class="trip-route">
+                            <span>Massy</span>
+                            <span class="arrow">→</span>
+                            <span>Paris 75001 (AMD)</span>
+                        </div>
+                        <div class="trip-details">
+                            <span>6 trajets/jour</span>
+                            <span>~20 min</span>
+                        </div>
+                    </div>
+                    <span class="badge badge-info">Fréquent</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--amd-gray-dark);">
+            <h2 class="section-title">Règles du covoiturage</h2>
+            <div class="form-container" style="max-width: 800px; margin: 0 auto;">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <input type="checkbox" id="acc1" class="accordion-header">
+                        <label for="acc1" class="accordion-label">Conditions pour les conducteurs</label>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <ul style="list-style: disc; padding-left: 20px;">
+                                    <li>Permis de conduire valide depuis au moins 2 ans</li>
+                                    <li>Véhicule assuré et contrôle technique à jour</li>
+                                    <li>Respecter les horaires convenus</li>
+                                    <li>Signaler toute annulation au moins 2h à l'avance</li>
+                                    <li>Maintenir le véhicule propre et en bon état</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <input type="checkbox" id="acc2" class="accordion-header">
+                        <label for="acc2" class="accordion-label">Conditions pour les passagers</label>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <ul style="list-style: disc; padding-left: 20px;">
+                                    <li>Être ponctuel au point de rendez-vous</li>
+                                    <li>Respecter le véhicule du conducteur</li>
+                                    <li>Prévenir en cas d'annulation</li>
+                                    <li>Attacher sa ceinture de sécurité</li>
+                                    <li>Contribuer aux frais selon l'accord convenu</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <input type="checkbox" id="acc3" class="accordion-header">
+                        <label for="acc3" class="accordion-label">Limitation géographique</label>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Les trajets sont limités à Paris et aux départements limitrophes (75, 77, 78, 91, 92, 94). Les points de départ et d'arrivée doivent inclure le site AMD de Paris 75001.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <input type="checkbox" id="acc4" class="accordion-header">
+                        <label for="acc4" class="accordion-label">Système de points</label>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Les conducteurs gagnent des points pour chaque trajet effectué :</p>
+                                <ul style="list-style: disc; padding-left: 20px; margin-top: 10px;">
+                                    <li>5 points par passager transporté</li>
+                                    <li>Bonus de 10 points pour les trajets réguliers (5+/semaine)</li>
+                                    <li>Points échangeables contre des bons d'achat ou jours de congé</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>AMD Éco-Mobilité</h4>
+                <p>La plateforme de mobilité durable pour les collaborateurs AMD.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="covoiturage.html">Covoiturage</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Informations</h4>
+                <ul>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+                    <li><a href="cgu.html">Conditions d'utilisation</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 AMD Éco-Mobilité - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mon profil - AMD Éco-Mobilité">
+    <title>Mon profil - AMD Éco-Mobilité</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/amd-logo.svg" alt="AMD Logo">
+                <span class="logo-text">Éco-Mobilité</span>
+            </a>
+            <div class="header-actions">
+                <a href="profil.html" class="btn btn-secondary">👤 Mon profil</a>
+                <a href="connexion.html" class="btn btn-primary">Déconnexion</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="covoiturage.html">Covoiturage</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <aside class="sidebar">
+            <div class="user-profile">
+                <div class="user-avatar">JD</div>
+                <h3>Jean Dupont</h3>
+                <p class="text-gray">IT / Informatique</p>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="dashboard.html">🏠 Tableau de bord</a>
+                <a href="statistiques.html">📊 Statistiques</a>
+                <a href="mes-trajets.html">🚗 Mes trajets</a>
+                <a href="mes-reservations.html">📅 Mes réservations</a>
+                <a href="historique.html">📜 Historique</a>
+                <a href="mes-points.html">🎁 Mes points</a>
+                <a href="profil.html" class="active">👤 Mon profil</a>
+                <a href="parametres.html">⚙️ Paramètres</a>
+            </nav>
+        </aside>
+
+        <div class="dashboard-content">
+            <h1 class="mb-3">Mon profil</h1>
+
+            <div class="form-container mb-3">
+                <div class="flex gap-2 mb-3" style="align-items: center;">
+                    <div class="user-avatar" style="width: 100px; height: 100px; font-size: 2.5rem;">JD</div>
+                    <div>
+                        <h2>Jean Dupont</h2>
+                        <p class="text-gray">IT / Informatique</p>
+                        <div class="flex gap-1 mt-1 flex-wrap">
+                            <span class="badge badge-success">Conducteur vérifié</span>
+                            <span class="badge badge-primary">⭐ 4.8</span>
+                            <span class="badge badge-info">45 trajets</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="confirmation-profil.html" method="get">
+                    <h3 class="text-red mb-2">Informations personnelles</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" id="prenom" name="prenom" class="form-control" value="Jean">
+                        </div>
+                        <div class="form-group">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom" class="form-control" value="Dupont">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Adresse e-mail</label>
+                        <input type="email" id="email" name="email" class="form-control" value="jean.dupont@amd.com" readonly>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telephone">Téléphone</label>
+                            <input type="tel" id="telephone" name="telephone" class="form-control" value="06 12 34 56 78">
+                        </div>
+                        <div class="form-group">
+                            <label for="departement">Département</label>
+                            <select id="departement" name="departement" class="form-control">
+                                <option value="it" selected>IT / Informatique</option>
+                                <option value="rh">Ressources Humaines</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="commercial">Commercial</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h3 class="text-red mb-2 mt-3">Informations conducteur</h3>
+                    <div class="form-group">
+                        <label for="vehicule">Véhicule principal</label>
+                        <input type="text" id="vehicule" name="vehicule" class="form-control" value="Tesla Model 3 - Grise">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="immat">Immatriculation</label>
+                            <input type="text" id="immat" name="immat" class="form-control" value="AB-123-CD">
+                        </div>
+                        <div class="form-group">
+                            <label for="places">Places disponibles</label>
+                            <select id="places" name="places" class="form-control">
+                                <option value="1">1 place</option>
+                                <option value="2">2 places</option>
+                                <option value="3" selected>3 places</option>
+                                <option value="4">4 places</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Équipements</label>
+                        <div class="flex gap-2 flex-wrap mt-1">
+                            <label class="form-check"><input type="checkbox" name="equip" value="clim" checked> Climatisation</label>
+                            <label class="form-check"><input type="checkbox" name="equip" value="musique" checked> Musique</label>
+                            <label class="form-check"><input type="checkbox" name="equip" value="coffre" checked> Grand coffre</label>
+                            <label class="form-check"><input type="checkbox" name="equip" value="animaux"> Animaux acceptés</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Enregistrer les modifications</button>
+                </form>
+            </div>
+
+            <div class="form-container">
+                <h3 class="text-red mb-2">Statistiques</h3>
+                <div class="stats-grid" style="padding: 0;">
+                    <div class="stat-card">
+                        <span class="stat-number">45</span>
+                        <span class="stat-label">Trajets effectués</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">156 kg</span>
+                        <span class="stat-label">CO₂ économisés</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">450</span>
+                        <span class="stat-label">Points fidélité</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2025 AMD Éco-Mobilité - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

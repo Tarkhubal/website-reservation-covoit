@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mes trajets - AMD Éco-Mobilité">
+    <title>Mes trajets - AMD Éco-Mobilité</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/amd-logo.svg" alt="AMD Logo">
+                <span class="logo-text">Éco-Mobilité</span>
+            </a>
+            <div class="header-actions">
+                <a href="profil.html" class="btn btn-secondary">👤 Mon profil</a>
+                <a href="connexion.html" class="btn btn-primary">Déconnexion</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="covoiturage.html">Covoiturage</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <aside class="sidebar">
+            <div class="user-profile">
+                <div class="user-avatar">JD</div>
+                <h3>Jean Dupont</h3>
+                <p class="text-gray">IT / Informatique</p>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="dashboard.html">🏠 Tableau de bord</a>
+                <a href="statistiques.html">📊 Statistiques</a>
+                <a href="mes-trajets.html" class="active">🚗 Mes trajets</a>
+                <a href="mes-reservations.html">📅 Mes réservations</a>
+                <a href="historique.html">📜 Historique</a>
+                <a href="mes-points.html">🎁 Mes points</a>
+                <a href="profil.html">👤 Mon profil</a>
+                <a href="parametres.html">⚙️ Paramètres</a>
+            </nav>
+        </aside>
+
+        <div class="dashboard-content">
+            <div class="dashboard-header">
+                <h1>Mes trajets proposés</h1>
+                <a href="proposer-trajet.html" class="btn btn-primary">+ Nouveau trajet</a>
+            </div>
+
+            <div class="tabs mb-3">
+                <input type="radio" name="trajets-tabs" id="tab1" checked>
+                <input type="radio" name="trajets-tabs" id="tab2">
+                <input type="radio" name="trajets-tabs" id="tab3">
+                
+                <div class="tabs-nav">
+                    <label for="tab1">À venir (3)</label>
+                    <label for="tab2">Passés (12)</label>
+                    <label for="tab3">Annulés (1)</label>
+                </div>
+                
+                <div class="tabs-content">
+                    <div class="tab-content">
+                        <div class="cards-container" style="padding: 0; grid-template-columns: 1fr;">
+                            <div class="card trip-card">
+                                <div class="driver-info">
+                                    <div class="driver-avatar" style="background: var(--amd-green);">JD</div>
+                                </div>
+                                <div class="trip-info">
+                                    <div class="trip-route">
+                                        <span>Paris 15e</span>
+                                        <span class="arrow">→</span>
+                                        <span>Paris 75001 (AMD)</span>
+                                    </div>
+                                    <div class="trip-details">
+                                        <span>📅 Demain 8h30</span>
+                                        <span>👥 2/3 passagers</span>
+                                        <span>🚗 Tesla Model 3</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-1">
+                                    <a href="detail-trajet.html" class="btn btn-secondary">Gérer</a>
+                                    <a href="#popup-annuler" class="btn btn-primary" style="background: var(--amd-gray);">Annuler</a>
+                                </div>
+                            </div>
+
+                            <div class="card trip-card">
+                                <div class="driver-info">
+                                    <div class="driver-avatar" style="background: var(--amd-green);">JD</div>
+                                </div>
+                                <div class="trip-info">
+                                    <div class="trip-route">
+                                        <span>Paris 75001 (AMD)</span>
+                                        <span class="arrow">→</span>
+                                        <span>Paris 15e</span>
+                                    </div>
+                                    <div class="trip-details">
+                                        <span>📅 Demain 18h00</span>
+                                        <span>👥 1/3 passagers</span>
+                                        <span>🚗 Tesla Model 3</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-1">
+                                    <a href="detail-trajet.html" class="btn btn-secondary">Gérer</a>
+                                    <a href="#popup-annuler" class="btn btn-primary" style="background: var(--amd-gray);">Annuler</a>
+                                </div>
+                            </div>
+
+                            <div class="card trip-card">
+                                <div class="driver-info">
+                                    <div class="driver-avatar" style="background: var(--amd-green);">JD</div>
+                                </div>
+                                <div class="trip-info">
+                                    <div class="trip-route">
+                                        <span>Paris 15e</span>
+                                        <span class="arrow">→</span>
+                                        <span>Paris 75001 (AMD)</span>
+                                    </div>
+                                    <div class="trip-details">
+                                        <span>📅 Lundi 8h30</span>
+                                        <span>👥 0/3 passagers</span>
+                                        <span>🚗 Tesla Model 3</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-1">
+                                    <a href="detail-trajet.html" class="btn btn-secondary">Gérer</a>
+                                    <a href="#popup-annuler" class="btn btn-primary" style="background: var(--amd-gray);">Annuler</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content">
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Trajet</th>
+                                        <th>Passagers</th>
+                                        <th>Points gagnés</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>17/12/2025</td>
+                                        <td>Paris 15e → Paris 75001</td>
+                                        <td>3</td>
+                                        <td class="text-green">+15 pts</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16/12/2025</td>
+                                        <td>Paris 75001 → Paris 15e</td>
+                                        <td>2</td>
+                                        <td class="text-green">+10 pts</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16/12/2025</td>
+                                        <td>Paris 15e → Paris 75001</td>
+                                        <td>2</td>
+                                        <td class="text-green">+10 pts</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15/12/2025</td>
+                                        <td>Paris 75001 → Paris 15e</td>
+                                        <td>3</td>
+                                        <td class="text-green">+15 pts</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15/12/2025</td>
+                                        <td>Paris 15e → Paris 75001</td>
+                                        <td>2</td>
+                                        <td class="text-green">+10 pts</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content">
+                        <div class="card">
+                            <p class="text-gray">📅 14/12/2025 · Paris 15e → Paris 75001</p>
+                            <p class="text-red mt-1">Annulé pour raison personnelle</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="popup-annuler" class="popup-overlay">
+        <div class="popup-content">
+            <a href="#" class="popup-close">×</a>
+            <h2 class="mb-2">Annuler ce trajet ?</h2>
+            <p class="text-gray mb-2">Cette action est irréversible. Les passagers inscrits seront notifiés de l'annulation.</p>
+            <form action="confirmation-annulation.html" method="get">
+                <div class="form-group">
+                    <label for="raison">Raison de l'annulation</label>
+                    <select id="raison" name="raison" class="form-control" required>
+                        <option value="">Sélectionnez une raison</option>
+                        <option value="perso">Raison personnelle</option>
+                        <option value="vehicule">Problème véhicule</option>
+                        <option value="travail">Contrainte professionnelle</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+                <div class="flex gap-1">
+                    <a href="#" class="btn btn-secondary" style="flex: 1;">Retour</a>
+                    <button type="submit" class="btn btn-primary" style="flex: 1; background: var(--amd-red);">Confirmer l'annulation</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2025 AMD Éco-Mobilité - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

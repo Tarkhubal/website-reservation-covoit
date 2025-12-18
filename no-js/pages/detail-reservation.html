@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Détail de réservation - AMD Éco-Mobilité">
+    <title>Détail réservation - AMD Éco-Mobilité</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/amd-logo.svg" alt="AMD Logo">
+                <span class="logo-text">Éco-Mobilité</span>
+            </a>
+            <div class="header-actions">
+                <a href="profil.html" class="btn btn-secondary">👤 Mon profil</a>
+                <a href="connexion.html" class="btn btn-primary">Déconnexion</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="covoiturage.html">Covoiturage</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="section">
+        <div class="form-container" style="max-width: 700px; margin: 0 auto;">
+            <div class="flex gap-2 mb-3" style="align-items: center; justify-content: space-between;">
+                <h1>Détail de la réservation</h1>
+                <span class="badge badge-success">Confirmée</span>
+            </div>
+
+            <div class="card mb-3">
+                <h3 class="text-red mb-2">🚗 Trajet en covoiturage</h3>
+                <div class="trip-route" style="font-size: 1.3rem; margin-bottom: 15px;">
+                    <span>Versailles</span>
+                    <span class="arrow">→</span>
+                    <span>Paris 75001 (AMD)</span>
+                </div>
+                <div class="trip-details">
+                    <span>📅 20 décembre 2024</span>
+                    <span>🕗 7h45</span>
+                    <span>⏱️ ~45 min</span>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <h3 class="text-red mb-2">👤 Conducteur</h3>
+                <div class="flex gap-2" style="align-items: center;">
+                    <div class="driver-avatar" style="background: var(--amd-blue);">ML</div>
+                    <div>
+                        <strong>Marie Lefèvre</strong>
+                        <p class="text-gray">Département Marketing · ⭐ 4.9 (23 avis)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <h3 class="text-red mb-2">📍 Point de rendez-vous</h3>
+                <p><strong>Gare de Versailles Chantiers</strong></p>
+                <p class="text-gray">Sortie principale, côté rue de l'Orangerie</p>
+                <p class="text-gray mt-1">Conseil : Soyez présent 5 minutes avant l'heure de départ.</p>
+            </div>
+
+            <div class="card mb-3">
+                <h3 class="text-red mb-2">🚙 Véhicule</h3>
+                <p><strong>Renault Zoé</strong> - Blanche</p>
+                <p class="text-gray">Immatriculation : CD-456-EF</p>
+                <div class="flex gap-1 flex-wrap mt-1">
+                    <span class="badge badge-info">Climatisation</span>
+                    <span class="badge badge-info">Musique</span>
+                    <span class="badge badge-info">Non-fumeur</span>
+                </div>
+            </div>
+
+            <div class="alert alert-info mb-3">
+                <span class="alert-icon">📧</span>
+                <span>Un récapitulatif a été envoyé à votre adresse e-mail.</span>
+            </div>
+
+            <div class="flex gap-2 flex-wrap">
+                <a href="mes-reservations.html" class="btn btn-secondary">← Mes réservations</a>
+                <a href="#popup-contact" class="btn btn-secondary">Contacter le conducteur</a>
+                <a href="#popup-annuler" class="btn btn-primary" style="background: var(--amd-gray);">Annuler</a>
+            </div>
+        </div>
+    </main>
+
+    <div id="popup-contact" class="popup-overlay">
+        <div class="popup-content">
+            <a href="#" class="popup-close">×</a>
+            <h2 class="mb-2">Contacter Marie</h2>
+            <form action="confirmation-message.html" method="get">
+                <div class="form-group">
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" class="form-control" rows="4" placeholder="Bonjour Marie..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="popup-annuler" class="popup-overlay">
+        <div class="popup-content">
+            <a href="#" class="popup-close">×</a>
+            <h2 class="mb-2">Annuler cette réservation ?</h2>
+            <p class="text-gray mb-2">Vous pouvez annuler gratuitement jusqu'à 24h avant le départ. Le conducteur sera notifié.</p>
+            <div class="flex gap-1">
+                <a href="#" class="btn btn-secondary" style="flex: 1;">Retour</a>
+                <a href="confirmation-annulation.html" class="btn btn-primary" style="flex: 1;">Confirmer l'annulation</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2025 AMD Éco-Mobilité - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

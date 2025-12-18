@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Réservation de véhicule AMD Éco-Mobilité">
+    <title>Réservation - AMD Éco-Mobilité</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/amd-logo.svg" alt="AMD Logo">
+                <span class="logo-text">Éco-Mobilité</span>
+            </a>
+            <div class="header-actions">
+                <a href="connexion.html" class="btn btn-secondary">Connexion</a>
+                <a href="inscription.html" class="btn btn-primary">Inscription</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="covoiturage.html">Covoiturage</a></li>
+                <li><a href="location.html" class="active">Location</a></li>
+                <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section" style="max-width: 900px;">
+            <a href="location.html" class="text-gray mb-2" style="display: inline-block;">← Retour aux véhicules</a>
+            
+            <div class="form-container">
+                <h1 class="form-title">Réservation de véhicule</h1>
+                
+                <div class="card mb-3" style="background: var(--amd-black);">
+                    <div class="flex gap-2" style="align-items: center;">
+                        <div class="vehicle-image" style="width: 100px; height: 80px; font-size: 2.5rem; background: linear-gradient(135deg, #2ecc71, #27ae60);">⚡🚲</div>
+                        <div>
+                            <h3>Vélo électrique #11</h3>
+                            <p class="text-gray">Taille M · Autonomie 50 km</p>
+                            <div class="vehicle-price">Gratuit</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form action="confirmation-location.html" method="get">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date-debut">Date de début</label>
+                            <input type="date" id="date-debut" name="date-debut" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="heure-debut">Heure de retrait</label>
+                            <input type="time" id="heure-debut" name="heure-debut" class="form-control" value="08:00" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date-fin">Date de fin</label>
+                            <input type="date" id="date-fin" name="date-fin" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="heure-fin">Heure de retour</label>
+                            <input type="time" id="heure-fin" name="heure-fin" class="form-control" value="18:00" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="motif">Motif de la location</label>
+                        <select id="motif" name="motif" class="form-control" required>
+                            <option value="">Sélectionnez un motif</option>
+                            <option value="pro">Déplacement professionnel</option>
+                            <option value="domicile">Trajet domicile-travail</option>
+                            <option value="perso">Déplacement personnel</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="commentaire">Commentaire (optionnel)</label>
+                        <textarea id="commentaire" name="commentaire" class="form-control" placeholder="Informations complémentaires..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-check">
+                            <input type="checkbox" name="reglement" required>
+                            <span>J'accepte le <a href="cgu.html" style="color: var(--amd-white);">règlement d'utilisation</a> des véhicules AMD</span>
+                        </label>
+                    </div>
+                    
+                    <div class="card mb-2" style="background: var(--amd-black);">
+                        <h4 class="mb-1">Récapitulatif</h4>
+                        <div class="detail-row">
+                            <span>Véhicule</span>
+                            <span>Vélo électrique #11</span>
+                        </div>
+                        <div class="detail-row">
+                            <span>Durée estimée</span>
+                            <span>1 journée</span>
+                        </div>
+                        <div class="detail-row">
+                            <span>Point de retrait</span>
+                            <span>Station vélos - Bâtiment A</span>
+                        </div>
+                        <div class="detail-row">
+                            <span style="color: var(--amd-white);" style="font-weight: 700;">Coût total</span>
+                            <span class="text-green" style="font-weight: 700;">Gratuit</span>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Confirmer la réservation</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2025 AMD Éco-Mobilité - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

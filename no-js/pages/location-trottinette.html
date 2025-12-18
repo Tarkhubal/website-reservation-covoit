@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Location de trottinettes électriques AMD">
+    <title>Location de trottinettes - AMD Éco-Mobilité</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/amd-logo.svg" alt="AMD Logo">
+                <span class="logo-text">Éco-Mobilité</span>
+            </a>
+            <div class="header-actions">
+                <a href="connexion.html" class="btn btn-secondary">Connexion</a>
+                <a href="inscription.html" class="btn btn-primary">Inscription</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="covoiturage.html">Covoiturage</a>
+                    <div class="dropdown-content">
+                        <a href="rechercher-trajet.html">Rechercher un trajet</a>
+                        <a href="proposer-trajet.html">Proposer un trajet</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="location.html" class="active">Location</a>
+                    <div class="dropdown-content">
+                        <a href="location-velo.html">Vélos</a>
+                        <a href="location-trottinette.html">Trottinettes</a>
+                        <a href="location-voiture.html">Voitures électriques</a>
+                    </div>
+                </li>
+                <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="padding: 40px 5%;">
+            <div class="hero-content">
+                <h1>🛴 Location de trottinettes</h1>
+                <p>Rapide et pratique ! Des trottinettes électriques pour vos déplacements courts.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Trottinettes disponibles</h2>
+            <div class="cards-container">
+                <div class="card vehicle-card">
+                    <div class="vehicle-image" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">🛴</div>
+                    <h3>Trottinette #T01</h3>
+                    <div class="flex gap-1 flex-center flex-wrap mb-1">
+                        <span class="badge badge-success">Disponible</span>
+                        <span class="badge badge-info">100%</span>
+                    </div>
+                    <div class="vehicle-specs">
+                        <span>🔋 25 km</span>
+                        <span>⚡ 25 km/h</span>
+                    </div>
+                    <div class="vehicle-price">Gratuit</div>
+                    <a href="reservation-vehicule.html?type=trottinette&id=T01" class="btn btn-primary mt-2" style="width: 100%;">Réserver</a>
+                </div>
+
+                <div class="card vehicle-card">
+                    <div class="vehicle-image" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">🛴</div>
+                    <h3>Trottinette #T02</h3>
+                    <div class="flex gap-1 flex-center flex-wrap mb-1">
+                        <span class="badge badge-success">Disponible</span>
+                        <span class="badge badge-info">85%</span>
+                    </div>
+                    <div class="vehicle-specs">
+                        <span>🔋 21 km</span>
+                        <span>⚡ 25 km/h</span>
+                    </div>
+                    <div class="vehicle-price">Gratuit</div>
+                    <a href="reservation-vehicule.html?type=trottinette&id=T02" class="btn btn-primary mt-2" style="width: 100%;">Réserver</a>
+                </div>
+
+                <div class="card vehicle-card">
+                    <div class="vehicle-image" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">🛴</div>
+                    <h3>Trottinette #T03</h3>
+                    <div class="flex gap-1 flex-center flex-wrap mb-1">
+                        <span class="badge badge-warning">En charge</span>
+                        <span class="badge badge-info">45%</span>
+                    </div>
+                    <div class="vehicle-specs">
+                        <span>🔋 11 km</span>
+                        <span>⚡ 25 km/h</span>
+                    </div>
+                    <div class="vehicle-price">Gratuit</div>
+                    <button class="btn btn-secondary mt-2" style="width: 100%;" disabled>En charge</button>
+                </div>
+
+                <div class="card vehicle-card">
+                    <div class="vehicle-image" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">🛴</div>
+                    <h3>Trottinette #T04</h3>
+                    <div class="flex gap-1 flex-center flex-wrap mb-1">
+                        <span class="badge badge-success">Disponible</span>
+                        <span class="badge badge-info">92%</span>
+                    </div>
+                    <div class="vehicle-specs">
+                        <span>🔋 23 km</span>
+                        <span>⚡ 25 km/h</span>
+                    </div>
+                    <div class="vehicle-price">Gratuit</div>
+                    <a href="reservation-vehicule.html?type=trottinette&id=T04" class="btn btn-primary mt-2" style="width: 100%;">Réserver</a>
+                </div>
+
+                <div class="card vehicle-card">
+                    <div class="vehicle-image" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">🛴</div>
+                    <h3>Trottinette #T05</h3>
+                    <div class="flex gap-1 flex-center flex-wrap mb-1">
+                        <span class="badge badge-success">Disponible</span>
+                        <span class="badge badge-info">78%</span>
+                    </div>
+                    <div class="vehicle-specs">
+                        <span>🔋 19 km</span>
+                        <span>⚡ 25 km/h</span>
+                    </div>
+                    <div class="vehicle-price">Gratuit</div>
+                    <a href="reservation-vehicule.html?type=trottinette&id=T05" class="btn btn-primary mt-2" style="width: 100%;">Réserver</a>
+                </div>
+
+                <div class="card vehicle-card">
+                    <div class="vehicle-image" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">🛴</div>
+                    <h3>Trottinette #T06</h3>
+                    <div class="flex gap-1 flex-center flex-wrap mb-1">
+                        <span class="badge badge-primary">Réservée</span>
+                    </div>
+                    <div class="vehicle-specs">
+                        <span>🔋 25 km</span>
+                        <span>⚡ 25 km/h</span>
+                    </div>
+                    <div class="vehicle-price">Gratuit</div>
+                    <button class="btn btn-secondary mt-2" style="width: 100%;" disabled>Indisponible</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--amd-gray-dark);">
+            <h2 class="section-title">Règles d'utilisation</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-icon">⛑️</div>
+                    <h3>Sécurité</h3>
+                    <p>Le port du casque est fortement recommandé. Des casques sont disponibles gratuitement à la station.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🚦</div>
+                    <h3>Code de la route</h3>
+                    <p>Respectez le code de la route. Vitesse limitée à 25 km/h sur les pistes cyclables, 6 km/h sur les trottoirs.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📍</div>
+                    <h3>Stationnement</h3>
+                    <p>Garez les trottinettes uniquement aux emplacements prévus. Ne bloquez pas les passages piétons.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2025 AMD Éco-Mobilité - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

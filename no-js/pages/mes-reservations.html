@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mes réservations - AMD Éco-Mobilité">
+    <title>Mes réservations - AMD Éco-Mobilité</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/amd-logo.svg" alt="AMD Logo">
+                <span class="logo-text">Éco-Mobilité</span>
+            </a>
+            <div class="header-actions">
+                <a href="profil.html" class="btn btn-secondary">👤 Mon profil</a>
+                <a href="connexion.html" class="btn btn-primary">Déconnexion</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="covoiturage.html">Covoiturage</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <aside class="sidebar">
+            <div class="user-profile">
+                <div class="user-avatar">JD</div>
+                <h3>Jean Dupont</h3>
+                <p class="text-gray">IT / Informatique</p>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="dashboard.html">🏠 Tableau de bord</a>
+                <a href="statistiques.html">📊 Statistiques</a>
+                <a href="mes-trajets.html">🚗 Mes trajets</a>
+                <a href="mes-reservations.html" class="active">📅 Mes réservations</a>
+                <a href="historique.html">📜 Historique</a>
+                <a href="mes-points.html">🎁 Mes points</a>
+                <a href="profil.html">👤 Mon profil</a>
+                <a href="parametres.html">⚙️ Paramètres</a>
+            </nav>
+        </aside>
+
+        <div class="dashboard-content">
+            <div class="dashboard-header">
+                <h1>Mes réservations</h1>
+            </div>
+
+            <h2 class="mb-2">Trajets réservés</h2>
+            <div class="cards-container mb-3" style="padding: 0; grid-template-columns: 1fr;">
+                <div class="card trip-card">
+                    <div class="driver-info">
+                        <div class="driver-avatar" style="background: var(--amd-blue);">ML</div>
+                        <div>
+                            <strong>Marie Lefèvre</strong>
+                            <p class="text-gray" style="font-size: 0.85rem;">Conductrice</p>
+                        </div>
+                    </div>
+                    <div class="trip-info">
+                        <div class="trip-route">
+                            <span>Versailles</span>
+                            <span class="arrow">→</span>
+                            <span>Paris 75001 (AMD)</span>
+                        </div>
+                        <div class="trip-details">
+                            <span>📅 Demain 7h45</span>
+                            <span>📍 Gare de Versailles</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="badge badge-success">Confirmée</span>
+                        <a href="detail-reservation.html" class="btn btn-secondary mt-1" style="display: block;">Détails</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="mb-2">Véhicules réservés</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Véhicule</th>
+                            <th>Date</th>
+                            <th>Durée</th>
+                            <th>Statut</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>🚲 Vélo</td>
+                            <td>Vélo électrique #12</td>
+                            <td>17/12/2025</td>
+                            <td>Journée</td>
+                            <td><span class="badge badge-success">Confirmée</span></td>
+                            <td>
+                                <a href="detail-reservation.html" class="btn btn-secondary" style="padding: 8px 15px;">Voir</a>
+                                <a href="#popup-annuler" class="btn btn-secondary" style="padding: 8px 15px; background: transparent;">Annuler</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>⚡ Voiture</td>
+                            <td>Tesla Model 3 #4</td>
+                            <td>19/12/2025</td>
+                            <td>2 jours</td>
+                            <td><span class="badge badge-warning">En attente</span></td>
+                            <td>
+                                <a href="detail-reservation.html" class="btn btn-secondary" style="padding: 8px 15px;">Voir</a>
+                                <a href="#popup-annuler" class="btn btn-secondary" style="padding: 8px 15px; background: transparent;">Annuler</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="flex gap-2 flex-wrap mt-3">
+                <a href="rechercher-trajet.html" class="btn btn-secondary">🔍 Réserver un trajet</a>
+                <a href="location.html" class="btn btn-secondary">🚲 Louer un véhicule</a>
+            </div>
+        </div>
+    </main>
+
+    <div id="popup-annuler" class="popup-overlay">
+        <div class="popup-content">
+            <a href="#" class="popup-close">×</a>
+            <h2 class="mb-2">Annuler cette réservation ?</h2>
+            <p class="text-gray mb-2">Vous pouvez annuler gratuitement jusqu'à 24h avant la date prévue.</p>
+            <div class="flex gap-1">
+                <a href="#" class="btn btn-secondary" style="flex: 1;">Retour</a>
+                <a href="confirmation-annulation.html" class="btn btn-primary" style="flex: 1;">Confirmer</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2025 AMD Éco-Mobilité - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

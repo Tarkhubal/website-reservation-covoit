@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mes points fidélité - AMD Éco-Mobilité">
+    <title>Mes points - AMD Éco-Mobilité</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/amd-logo.svg" alt="AMD Logo">
+                <span class="logo-text">Éco-Mobilité</span>
+            </a>
+            <div class="header-actions">
+                <a href="profil.html" class="btn btn-secondary">👤 Mon profil</a>
+                <a href="connexion.html" class="btn btn-primary">Déconnexion</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="covoiturage.html">Covoiturage</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <aside class="sidebar">
+            <div class="user-profile">
+                <div class="user-avatar">JD</div>
+                <h3>Jean Dupont</h3>
+                <p class="text-gray">IT / Informatique</p>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="dashboard.html">🏠 Tableau de bord</a>
+                <a href="statistiques.html">📊 Statistiques</a>
+                <a href="mes-trajets.html">🚗 Mes trajets</a>
+                <a href="mes-reservations.html">📅 Mes réservations</a>
+                <a href="historique.html">📜 Historique</a>
+                <a href="mes-points.html" class="active">🎁 Mes points</a>
+                <a href="profil.html">👤 Mon profil</a>
+                <a href="parametres.html">⚙️ Paramètres</a>
+            </nav>
+        </aside>
+
+        <div class="dashboard-content">
+            <h1 class="mb-3">Mes points fidélité</h1>
+
+            <div class="stats-grid mb-3">
+                <div class="stat-card" style="background: linear-gradient(135deg, var(--amd-red), var(--amd-red-dark));">
+                    <span class="stat-number" style="color: white;">450</span>
+                    <span class="stat-label" style="color: rgba(255,255,255,0.8);">Points disponibles</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">780</span>
+                    <span class="stat-label">Points gagnés (total)</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">330</span>
+                    <span class="stat-label">Points utilisés</span>
+                </div>
+            </div>
+
+            <h2 class="mb-2">Échanger mes points</h2>
+            <div class="cards-container mb-3" style="padding: 0;">
+                <div class="card text-center">
+                    <div class="card-icon" style="margin: 0 auto 15px;">🚗</div>
+                    <h3>Voiture électrique</h3>
+                    <p class="text-gray">1 journée de location</p>
+                    <div class="vehicle-price mt-1">15 pts</div>
+                    <a href="location-voiture.html" class="btn btn-primary mt-2">Réserver</a>
+                </div>
+                <div class="card text-center">
+                    <div class="card-icon" style="margin: 0 auto 15px;">🎁</div>
+                    <h3>Bon d'achat 10€</h3>
+                    <p class="text-gray">Valable chez nos partenaires</p>
+                    <div class="vehicle-price mt-1">100 pts</div>
+                    <a href="#popup-echange" class="btn btn-primary mt-2">Échanger</a>
+                </div>
+                <div class="card text-center">
+                    <div class="card-icon" style="margin: 0 auto 15px;">☀️</div>
+                    <h3>Demi-journée de congé</h3>
+                    <p class="text-gray">À utiliser dans l'année</p>
+                    <div class="vehicle-price mt-1">500 pts</div>
+                    <button class="btn btn-secondary mt-2" disabled>Insuffisant</button>
+                </div>
+            </div>
+
+            <h2 class="mb-2">Historique des points</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>17/12/2025</td>
+                            <td>Covoiturage Paris → Paris 75001 (3 passagers)</td>
+                            <td class="text-green">+15</td>
+                        </tr>
+                        <tr>
+                            <td>16/12/2025</td>
+                            <td>Covoiturage Paris 75001 → Paris (2 passagers)</td>
+                            <td class="text-green">+10</td>
+                        </tr>
+                        <tr>
+                            <td>16/12/2025</td>
+                            <td>Covoiturage Paris → Paris 75001 (2 passagers)</td>
+                            <td class="text-green">+10</td>
+                        </tr>
+                        <tr>
+                            <td>15/12/2025</td>
+                            <td>Bonus régularité (5+ trajets/semaine)</td>
+                            <td class="text-green">+10</td>
+                        </tr>
+                        <tr>
+                            <td>14/12/2025</td>
+                            <td>Location Tesla Model 3 (1 jour)</td>
+                            <td style="color: var(--amd-white);">-15</td>
+                        </tr>
+                        <tr>
+                            <td>13/12/2025</td>
+                            <td>Covoiturage Paris → Paris 75001 (2 passagers)</td>
+                            <td class="text-green">+10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <div id="popup-echange" class="popup-overlay">
+        <div class="popup-content">
+            <a href="#" class="popup-close">×</a>
+            <h2 class="mb-2">Échanger 100 points</h2>
+            <p class="mb-2">Vous êtes sur le point d'échanger 100 points contre un bon d'achat de 10€.</p>
+            <div class="alert alert-info mb-2">
+                <span class="alert-icon">📧</span>
+                <span>Le bon sera envoyé par e-mail sous 24h.</span>
+            </div>
+            <div class="flex gap-1">
+                <a href="#" class="btn btn-secondary" style="flex: 1;">Annuler</a>
+                <a href="confirmation-echange.html" class="btn btn-primary" style="flex: 1;">Confirmer</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2025 AMD Éco-Mobilité - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>
