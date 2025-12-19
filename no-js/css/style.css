@@ -1799,8 +1799,8 @@ footer::before {
 .map-route.main {
     top: 20%;
     left: 27%;
-    height: 58%;
-    transform: rotate(38deg);
+    height: 65%;
+    transform: rotate(325deg);
 }
 
 .map-label {
