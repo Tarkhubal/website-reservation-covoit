@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <div class="header-top">
@@ -34,13 +36,15 @@
     <main>
         <section class="form-section" style="max-width: 900px;">
             <a href="location.html" class="text-gray mb-2" style="display: inline-block;">← Retour aux véhicules</a>
-            
+
             <div class="form-container">
                 <h1 class="form-title">Réservation de véhicule</h1>
-                
+
                 <div class="card mb-3" style="background: var(--amd-black);">
                     <div class="flex gap-2" style="align-items: center;">
-                        <div class="vehicle-image" style="width: 100px; height: 80px; font-size: 2.5rem; background: linear-gradient(135deg, #2ecc71, #27ae60);">⚡🚲</div>
+                        <div class="vehicle-image"
+                            style="width: 100px; height: 80px; font-size: 2.5rem; background: linear-gradient(135deg, #2ecc71, #27ae60);">
+                            ⚡🚲</div>
                         <div>
                             <h3>Vélo électrique #11</h3>
                             <p class="text-gray">Taille M · Autonomie 50 km</p>
@@ -48,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <form action="confirmation-location.html" method="get">
                     <div class="form-row">
                         <div class="form-group">
@@ -57,10 +61,11 @@
                         </div>
                         <div class="form-group">
                             <label for="heure-debut">Heure de retrait</label>
-                            <input type="time" id="heure-debut" name="heure-debut" class="form-control" value="08:00" required>
+                            <input type="time" id="heure-debut" name="heure-debut" class="form-control" value="08:00"
+                                required>
                         </div>
                     </div>
-                    
+
                     <div class="form-row">
                         <div class="form-group">
                             <label for="date-fin">Date de fin</label>
@@ -68,10 +73,11 @@
                         </div>
                         <div class="form-group">
                             <label for="heure-fin">Heure de retour</label>
-                            <input type="time" id="heure-fin" name="heure-fin" class="form-control" value="18:00" required>
+                            <input type="time" id="heure-fin" name="heure-fin" class="form-control" value="18:00"
+                                required>
                         </div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="motif">Motif de la location</label>
                         <select id="motif" name="motif" class="form-control" required>
@@ -82,19 +88,21 @@
                             <option value="autre">Autre</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="commentaire">Commentaire (optionnel)</label>
-                        <textarea id="commentaire" name="commentaire" class="form-control" placeholder="Informations complémentaires..."></textarea>
+                        <textarea id="commentaire" name="commentaire" class="form-control"
+                            placeholder="Informations complémentaires..."></textarea>
                     </div>
-                    
+
                     <div class="form-group">
                         <label class="form-check">
                             <input type="checkbox" name="reglement" required>
-                            <span>J'accepte le <a href="cgu.html" style="color: var(--amd-white);">règlement d'utilisation</a> des véhicules AMD</span>
+                            <span>J'accepte le <a href="cgu.html" style="color: var(--amd-white);">règlement
+                                    d'utilisation</a> des véhicules AMD</span>
                         </label>
                     </div>
-                    
+
                     <div class="card mb-2" style="background: var(--amd-black);">
                         <h4 class="mb-1">Récapitulatif</h4>
                         <div class="detail-row">
@@ -114,7 +122,7 @@
                             <span class="text-green" style="font-weight: 700;">Gratuit</span>
                         </div>
                     </div>
-                    
+
                     <button type="submit" class="btn btn-primary" style="width: 100%;">Confirmer la réservation</button>
                 </form>
             </div>
@@ -127,4 +135,5 @@
         </div>
     </footer>
 </body>
+
 </html>

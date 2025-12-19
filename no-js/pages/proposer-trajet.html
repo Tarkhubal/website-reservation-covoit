@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <div class="header-top">
@@ -48,32 +50,34 @@
         <section class="form-section" style="max-width: 900px;">
             <div class="form-container">
                 <h1 class="form-title">Proposer un trajet</h1>
-                
+
                 <div class="tabs mb-3">
                     <input type="radio" name="type-trajet" id="tab1" checked>
                     <input type="radio" name="type-trajet" id="tab2">
                     <input type="radio" name="type-trajet" id="tab3">
-                    
+
                     <div class="tabs-nav">
                         <label for="tab1">Trajet unique</label>
                         <label for="tab2">Trajet régulier</label>
                         <label for="tab3">Aller-retour</label>
                     </div>
-                    
+
                     <div class="tabs-content">
                         <div class="tab-content">
                             <form action="confirmation-trajet.html" method="get">
                                 <div class="form-row">
                                     <div class="form-group">
                                         <label for="depart1">Lieu de départ</label>
-                                        <input type="text" id="depart1" name="depart" class="form-control" placeholder="Adresse de départ" required>
+                                        <input type="text" id="depart1" name="depart" class="form-control"
+                                            placeholder="Adresse de départ" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="arrivee1">Lieu d'arrivée</label>
-                                        <input type="text" id="arrivee1" name="arrivee" class="form-control" placeholder="Adresse d'arrivée" required>
+                                        <input type="text" id="arrivee1" name="arrivee" class="form-control"
+                                            placeholder="Adresse d'arrivée" required>
                                     </div>
                                 </div>
-                                
+
                                 <div class="form-row">
                                     <div class="form-group">
                                         <label for="date1">Date du trajet</label>
@@ -81,10 +85,11 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="heure1">Heure de départ</label>
-                                        <input type="time" id="heure1" name="heure" class="form-control" value="08:00" required>
+                                        <input type="time" id="heure1" name="heure" class="form-control" value="08:00"
+                                            required>
                                     </div>
                                 </div>
-                                
+
                                 <div class="form-row">
                                     <div class="form-group">
                                         <label for="places1">Places disponibles</label>
@@ -105,12 +110,13 @@
                                         </select>
                                     </div>
                                 </div>
-                                
+
                                 <div class="form-group">
                                     <label for="rdv1">Point de rendez-vous</label>
-                                    <input type="text" id="rdv1" name="rdv" class="form-control" placeholder="Ex: Métro Boucicaut, sortie 2">
+                                    <input type="text" id="rdv1" name="rdv" class="form-control"
+                                        placeholder="Ex: Métro Boucicaut, sortie 2">
                                 </div>
-                                
+
                                 <div class="form-group">
                                     <label for="contribution1">Contribution demandée</label>
                                     <select id="contribution1" name="contribution" class="form-control">
@@ -120,44 +126,54 @@
                                         <option value="10pts">10 points</option>
                                     </select>
                                 </div>
-                                
+
                                 <div class="form-group">
                                     <label for="commentaire1">Commentaire (optionnel)</label>
-                                    <textarea id="commentaire1" name="commentaire" class="form-control" placeholder="Informations complémentaires..."></textarea>
+                                    <textarea id="commentaire1" name="commentaire" class="form-control"
+                                        placeholder="Informations complémentaires..."></textarea>
                                 </div>
-                                
-                                <button type="submit" class="btn btn-primary" style="width: 100%;">Publier le trajet</button>
+
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">Publier le
+                                    trajet</button>
                             </form>
                         </div>
-                        
+
                         <div class="tab-content">
                             <form action="confirmation-trajet.html" method="get">
                                 <div class="form-row">
                                     <div class="form-group">
                                         <label for="depart2">Lieu de départ</label>
-                                        <input type="text" id="depart2" name="depart" class="form-control" placeholder="Adresse de départ" required>
+                                        <input type="text" id="depart2" name="depart" class="form-control"
+                                            placeholder="Adresse de départ" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="arrivee2">Lieu d'arrivée</label>
-                                        <input type="text" id="arrivee2" name="arrivee" class="form-control" placeholder="Adresse d'arrivée" required>
+                                        <input type="text" id="arrivee2" name="arrivee" class="form-control"
+                                            placeholder="Adresse d'arrivée" required>
                                     </div>
                                 </div>
-                                
+
                                 <div class="form-group">
                                     <label>Jours de la semaine</label>
                                     <div class="flex gap-2 flex-wrap mt-1">
-                                        <label class="form-check"><input type="checkbox" name="jours" value="lundi"> Lundi</label>
-                                        <label class="form-check"><input type="checkbox" name="jours" value="mardi"> Mardi</label>
-                                        <label class="form-check"><input type="checkbox" name="jours" value="mercredi"> Mercredi</label>
-                                        <label class="form-check"><input type="checkbox" name="jours" value="jeudi"> Jeudi</label>
-                                        <label class="form-check"><input type="checkbox" name="jours" value="vendredi"> Vendredi</label>
+                                        <label class="form-check"><input type="checkbox" name="jours" value="lundi">
+                                            Lundi</label>
+                                        <label class="form-check"><input type="checkbox" name="jours" value="mardi">
+                                            Mardi</label>
+                                        <label class="form-check"><input type="checkbox" name="jours" value="mercredi">
+                                            Mercredi</label>
+                                        <label class="form-check"><input type="checkbox" name="jours" value="jeudi">
+                                            Jeudi</label>
+                                        <label class="form-check"><input type="checkbox" name="jours" value="vendredi">
+                                            Vendredi</label>
                                     </div>
                                 </div>
-                                
+
                                 <div class="form-row">
                                     <div class="form-group">
                                         <label for="heure2">Heure de départ</label>
-                                        <input type="time" id="heure2" name="heure" class="form-control" value="08:00" required>
+                                        <input type="time" id="heure2" name="heure" class="form-control" value="08:00"
+                                            required>
                                     </div>
                                     <div class="form-group">
                                         <label for="places2">Places disponibles</label>
@@ -169,7 +185,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                
+
                                 <div class="form-row">
                                     <div class="form-group">
                                         <label for="debut2">Date de début</label>
@@ -180,24 +196,27 @@
                                         <input type="date" id="fin2" name="fin" class="form-control">
                                     </div>
                                 </div>
-                                
-                                <button type="submit" class="btn btn-primary" style="width: 100%;">Publier le trajet régulier</button>
+
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">Publier le trajet
+                                    régulier</button>
                             </form>
                         </div>
-                        
+
                         <div class="tab-content">
                             <form action="confirmation-trajet.html" method="get">
                                 <div class="form-row">
                                     <div class="form-group">
                                         <label for="depart3">Lieu de départ</label>
-                                        <input type="text" id="depart3" name="depart" class="form-control" placeholder="Adresse de départ" required>
+                                        <input type="text" id="depart3" name="depart" class="form-control"
+                                            placeholder="Adresse de départ" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="arrivee3">Lieu d'arrivée</label>
-                                        <input type="text" id="arrivee3" name="arrivee" class="form-control" placeholder="Adresse d'arrivée" required>
+                                        <input type="text" id="arrivee3" name="arrivee" class="form-control"
+                                            placeholder="Adresse d'arrivée" required>
                                     </div>
                                 </div>
-                                
+
                                 <div class="form-row">
                                     <div class="form-group">
                                         <label for="date3">Date</label>
@@ -205,15 +224,18 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="heure-aller">Heure aller</label>
-                                        <input type="time" id="heure-aller" name="heure-aller" class="form-control" value="08:00" required>
+                                        <input type="time" id="heure-aller" name="heure-aller" class="form-control"
+                                            value="08:00" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="heure-retour">Heure retour</label>
-                                        <input type="time" id="heure-retour" name="heure-retour" class="form-control" value="18:00" required>
+                                        <input type="time" id="heure-retour" name="heure-retour" class="form-control"
+                                            value="18:00" required>
                                     </div>
                                 </div>
-                                
-                                <button type="submit" class="btn btn-primary" style="width: 100%;">Publier l'aller-retour</button>
+
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">Publier
+                                    l'aller-retour</button>
                             </form>
                         </div>
                     </div>
@@ -228,4 +250,5 @@
         </div>
     </footer>
 </body>
+
 </html>

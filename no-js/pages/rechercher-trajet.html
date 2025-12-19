@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <div class="header-top">
@@ -48,19 +50,21 @@
         <section class="form-section" style="max-width: 900px;">
             <div class="form-container">
                 <h1 class="form-title">Rechercher un trajet</h1>
-                
+
                 <form action="resultats-recherche.html" method="get">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="depart">Lieu de départ</label>
-                            <input type="text" id="depart" name="depart" class="form-control" placeholder="Ville ou adresse" required>
+                            <input type="text" id="depart" name="depart" class="form-control"
+                                placeholder="Ville ou adresse" required>
                         </div>
                         <div class="form-group">
                             <label for="arrivee">Lieu d'arrivée</label>
-                            <input type="text" id="arrivee" name="arrivee" class="form-control" placeholder="Ville ou adresse" required>
+                            <input type="text" id="arrivee" name="arrivee" class="form-control"
+                                placeholder="Ville ou adresse" required>
                         </div>
                     </div>
-                    
+
                     <div class="form-row">
                         <div class="form-group">
                             <label for="date">Date du trajet</label>
@@ -71,7 +75,7 @@
                             <input type="time" id="heure" name="heure" class="form-control" value="08:00">
                         </div>
                     </div>
-                    
+
                     <div class="form-row">
                         <div class="form-group">
                             <label for="passagers">Nombre de passagers</label>
@@ -92,7 +96,7 @@
                             </select>
                         </div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label>Options de recherche</label>
                         <div class="flex gap-2 flex-wrap mt-1">
@@ -110,7 +114,7 @@
                             </label>
                         </div>
                     </div>
-                    
+
                     <button type="submit" class="btn btn-primary" style="width: 100%;">🔍 Rechercher</button>
                 </form>
             </div>
@@ -144,4 +148,5 @@
         </div>
     </footer>
 </body>
+
 </html>

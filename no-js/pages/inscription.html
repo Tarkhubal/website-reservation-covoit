@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <div class="header-top">
@@ -48,29 +50,32 @@
         <section class="form-section">
             <div class="form-container">
                 <h1 class="form-title">Créer un compte</h1>
-                
+
                 <form action="confirmation-inscription.html" method="get">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="prenom">Prénom</label>
-                            <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Jean" required>
+                            <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Jean"
+                                required>
                         </div>
                         <div class="form-group">
                             <label for="nom">Nom</label>
                             <input type="text" id="nom" name="nom" class="form-control" placeholder="Dupont" required>
                         </div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="email">Adresse e-mail professionnelle</label>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="prenom.nom@amd.com" required>
+                        <input type="email" id="email" name="email" class="form-control"
+                            placeholder="prenom.nom@amd.com" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="matricule">Matricule employé</label>
-                        <input type="text" id="matricule" name="matricule" class="form-control" placeholder="AMD-12345" required>
+                        <input type="text" id="matricule" name="matricule" class="form-control" placeholder="AMD-12345"
+                            required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="departement">Département</label>
                         <select id="departement" name="departement" class="form-control" required>
@@ -85,40 +90,45 @@
                             <option value="logistique">Logistique</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="telephone">Téléphone mobile</label>
-                        <input type="tel" id="telephone" name="telephone" class="form-control" placeholder="06 12 34 56 78" required>
+                        <input type="tel" id="telephone" name="telephone" class="form-control"
+                            placeholder="06 12 34 56 78" required>
                     </div>
-                    
+
                     <div class="form-row">
                         <div class="form-group">
                             <label for="password">Mot de passe</label>
-                            <input type="password" id="password" name="password" class="form-control" placeholder="Min. 8 caractères" required>
+                            <input type="password" id="password" name="password" class="form-control"
+                                placeholder="Min. 8 caractères" required>
                         </div>
                         <div class="form-group">
                             <label for="password-confirm">Confirmer</label>
-                            <input type="password" id="password-confirm" name="password-confirm" class="form-control" placeholder="Confirmez le mot de passe" required>
+                            <input type="password" id="password-confirm" name="password-confirm" class="form-control"
+                                placeholder="Confirmez le mot de passe" required>
                         </div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label class="form-check">
                             <input type="checkbox" name="conducteur">
                             <span>Je souhaite proposer des trajets en tant que conducteur</span>
                         </label>
                     </div>
-                    
+
                     <div class="form-group">
                         <label class="form-check">
                             <input type="checkbox" name="cgu" required>
-                            <span>J'accepte les <a href="cgu.html" style="color: var(--amd-white);">conditions d'utilisation</a> et la <a href="confidentialite.html" style="color: var(--amd-white);">politique de confidentialité</a></span>
+                            <span>J'accepte les <a href="cgu.html" style="color: var(--amd-white);">conditions
+                                    d'utilisation</a> et la <a href="confidentialite.html"
+                                    style="color: var(--amd-white);">politique de confidentialité</a></span>
                         </label>
                     </div>
-                    
+
                     <button type="submit" class="btn btn-primary" style="width: 100%;">Créer mon compte</button>
                 </form>
-                
+
                 <div class="text-center mt-3">
                     <p class="text-gray">Déjà inscrit ?</p>
                     <a href="connexion.html" class="btn btn-secondary mt-1">Se connecter</a>
@@ -148,4 +158,5 @@
         </div>
     </footer>
 </body>
+
 </html>

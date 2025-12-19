@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <div class="header-top">
@@ -60,13 +62,13 @@
                 <input type="radio" name="trajets-tabs" id="tab1" checked>
                 <input type="radio" name="trajets-tabs" id="tab2">
                 <input type="radio" name="trajets-tabs" id="tab3">
-                
+
                 <div class="tabs-nav">
                     <label for="tab1">À venir (3)</label>
                     <label for="tab2">Passés (12)</label>
                     <label for="tab3">Annulés (1)</label>
                 </div>
-                
+
                 <div class="tabs-content">
                     <div class="tab-content">
                         <div class="cards-container" style="padding: 0; grid-template-columns: 1fr;">
@@ -88,7 +90,8 @@
                                 </div>
                                 <div class="flex gap-1">
                                     <a href="detail-trajet.html" class="btn btn-secondary">Gérer</a>
-                                    <a href="#popup-annuler" class="btn btn-primary" style="background: var(--amd-gray);">Annuler</a>
+                                    <a href="#popup-annuler" class="btn btn-primary"
+                                        style="background: var(--amd-gray);">Annuler</a>
                                 </div>
                             </div>
 
@@ -110,7 +113,8 @@
                                 </div>
                                 <div class="flex gap-1">
                                     <a href="detail-trajet.html" class="btn btn-secondary">Gérer</a>
-                                    <a href="#popup-annuler" class="btn btn-primary" style="background: var(--amd-gray);">Annuler</a>
+                                    <a href="#popup-annuler" class="btn btn-primary"
+                                        style="background: var(--amd-gray);">Annuler</a>
                                 </div>
                             </div>
 
@@ -132,12 +136,13 @@
                                 </div>
                                 <div class="flex gap-1">
                                     <a href="detail-trajet.html" class="btn btn-secondary">Gérer</a>
-                                    <a href="#popup-annuler" class="btn btn-primary" style="background: var(--amd-gray);">Annuler</a>
+                                    <a href="#popup-annuler" class="btn btn-primary"
+                                        style="background: var(--amd-gray);">Annuler</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="tab-content">
                         <div class="table-container">
                             <table>
@@ -184,7 +189,7 @@
                             </table>
                         </div>
                     </div>
-                    
+
                     <div class="tab-content">
                         <div class="card">
                             <p class="text-gray">📅 14/12/2025 · Paris 15e → Paris 75001</p>
@@ -200,7 +205,8 @@
         <div class="popup-content">
             <a href="#" class="popup-close">×</a>
             <h2 class="mb-2">Annuler ce trajet ?</h2>
-            <p class="text-gray mb-2">Cette action est irréversible. Les passagers inscrits seront notifiés de l'annulation.</p>
+            <p class="text-gray mb-2">Cette action est irréversible. Les passagers inscrits seront notifiés de
+                l'annulation.</p>
             <form action="confirmation-annulation.html" method="get">
                 <div class="form-group">
                     <label for="raison">Raison de l'annulation</label>
@@ -214,7 +220,8 @@
                 </div>
                 <div class="flex gap-1">
                     <a href="#" class="btn btn-secondary" style="flex: 1;">Retour</a>
-                    <button type="submit" class="btn btn-primary" style="flex: 1; background: var(--amd-red);">Confirmer l'annulation</button>
+                    <button type="submit" class="btn btn-primary" style="flex: 1; background: var(--amd-red);">Confirmer
+                        l'annulation</button>
                 </div>
             </form>
         </div>
@@ -226,4 +233,5 @@
         </div>
     </footer>
 </body>
+
 </html>
